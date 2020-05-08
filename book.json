@@ -1,0 +1,14 @@
+{
+    "title": "axeBrowser 使用手册",
+    "author": "http://axeBrowser.com",
+    "language": "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "chapter-fold",
+        "expandable-chapters",
+        "search-pro",
+        "splitter",
+        "back-to-top-button"
+    ]
+}
