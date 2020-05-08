@@ -1,6 +1,7 @@
 # axeBrowser 使用手册
 
 * [简介与说明](README.md)
+* [免费下载](download.md)
 * [运行流程](how_to_run.md)
 * [命令行参数](args.md)
   * [runas](args.md#runas)
