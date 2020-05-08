@@ -1,0 +1,712 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JavaScript 扩展 · axeBrowser 使用手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="http://axeBrowser.com">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="jscall.html" />
+    
+    
+    <link rel="prev" href="args.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介与说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="how_to_run.html">
+            
+                <a href="how_to_run.html">
+            
+                    
+                    运行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="args.html">
+            
+                <a href="args.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="args.html">
+            
+                <a href="args.html#runas">
+            
+                    
+                    runas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="args.html">
+            
+                <a href="args.html#home">
+            
+                    
+                    home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="args.html">
+            
+                <a href="args.html#script">
+            
+                    
+                    script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="args.html">
+            
+                <a href="args.html#entrypoint">
+            
+                    
+                    entrypoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="args.html">
+            
+                <a href="args.html#referer">
+            
+                    
+                    referer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="args.html">
+            
+                <a href="args.html#loglevel">
+            
+                    
+                    loglevel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    waitdoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.2.1" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2.2" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    nowait
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="args.html">
+            
+                <a href="args.html#useragent">
+            
+                    
+                    useragent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="args.html">
+            
+                <a href="args.html#proxy">
+            
+                    
+                    proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="args.html">
+            
+                <a href="args.html#timeout">
+            
+                    
+                    timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="jscall.html">
+            
+                <a href="jscall.html">
+            
+                    
+                    JavaScript 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="jscall.html">
+            
+                <a href="jscall.html#axe">
+            
+                    
+                    axe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_exec">
+            
+                    
+                    axe.exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_execWait">
+            
+                    
+                    axe.execWait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_exit">
+            
+                    
+                    axe.exit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_getArgv">
+            
+                    
+                    axe.getArgv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_log">
+            
+                    
+                    axe.log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_setTitle">
+            
+                    
+                    axe.setTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_toString">
+            
+                    
+                    axe.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="example.html">
+            
+                <a href="example.html">
+            
+                    
+                    应用范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    常见问题与解答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="history.md">
+            
+                <span>
+            
+                    
+                    版本与历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >JavaScript 扩展</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="javascript-&#x6269;&#x5C55;">JavaScript &#x6269;&#x5C55;</h1>
+<p>axeBrowser &#x5728;&#x4E0D;&#x65AD;&#x7684;&#x66F4;&#x65B0;&#x548C;&#x5B8C;&#x5584;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x5185;&#x7F6E;&#x7684;&#x6269;&#x5C55;&#x4E5F;&#x4F1A;&#x6709;&#x4FEE;&#x6539;&#x548C;&#x589E;&#x51CF;&#x3002;&#x5728;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x548C;&#x589E;&#x51CF;&#x65F6;&#xFF0C;&#x4F1A;&#x5C3D;&#x91CF;&#x7684;&#x4FDD;&#x6301;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x4F7F;&#x539F;&#x6709;&#x6269;&#x5C55;&#x4EE3;&#x7801;&#x65E0;&#x9700;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;&#x8BF7;&#x968F;&#x65F6;&#x5173;&#x6CE8;&#x6700;&#x65B0;&#x7684;&#x6587;&#x6863;&#x8BF4;&#x660E;&#x3002;</p>
+<h2 id="axe"><span id="axe">axe</span></h2>
+<p>axeBrowser &#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x5BF9;&#x8C61; axe&#x3002;JavaScript &#x53EF;&#x4EE5;&#x901A;&#x8FC7; window.external.axe &#x83B7;&#x5F97;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6269;&#x5C55;&#x5BF9;&#x8C61;&#x5BF9;&#x529F;&#x80FD;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6269;&#x5C55;&#x5BF9;&#x8C61;&#xFF0C;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x662F;&#x5426;&#x5C5E;&#x4E8E; axeBrowser &#x73AF;&#x5883;&#x5E76;&#x83B7;&#x53D6;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> _axe = <span class="hljs-built_in">window</span>.external.axe;
+<span class="hljs-keyword">if</span> (_axe == <span class="hljs-literal">null</span>) {
+    alert(<span class="hljs-string">&apos;&#x8BF7;&#x68C0;&#x67E5;&#xFF1A;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4F3C;&#x4E4E;&#x4E0D;&#x662F; axeBrowser &#xFF1F;&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+    alert(_axe);
+}
+</code></pre>
+<h2 id="axegetargv"><span id="axe_getArgv">axe.getArgv</span></h2>
+<p>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x3002;</p>
+<pre><code>axeBrowser -home qq.com -p1 test;
+</code></pre><pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.getArgv(<span class="hljs-string">&apos;home&apos;</span>);
+<span class="hljs-built_in">window</span>.external.axe.getArgv(<span class="hljs-string">&apos;p1&apos;</span>);
+
+qq.com
+test
+</code></pre>
+<h2 id="axelog"><span id="axe_log">axe.log</span></h2>
+<p>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x4E2D;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#xFF0C;&#x5982;&#x679C;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x6CA1;&#x6709;&#x6253;&#x5F00;&#x5C06;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x3002;&#x672C;&#x51FD;&#x6570;&#x53D8;&#x91CF;&#x4E3A;&#x53D8;&#x957F;&#xFF0C;&#x63A5;&#x53D7;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#x65F6;&#xFF0C;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x4E4B;&#x95F4;&#x7528;&#x5236;&#x8868;&#x7B26;&#x5206;&#x9694;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.log(<span class="hljs-string">&apos;This line is a log.&apos;</span>);
+<span class="hljs-built_in">window</span>.external.axe.log(<span class="hljs-string">&apos;This line is 1st&apos;</span>, <span class="hljs-string">&apos;2nd&apos;</span>, <span class="hljs-string">&apos;3rd&apos;</span>);
+
+This line is a log.
+This line is <span class="hljs-number">1</span>st    <span class="hljs-number">2</span>nd <span class="hljs-number">3</span>rd
+</code></pre>
+<h2 id="axeexit"><span id="axe_exit">axe.exit</span></h2>
+<p>&#x7ACB;&#x5373;&#x9000;&#x51FA; axeBrowser&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.exit();
+</code></pre>
+<h2 id="axeexec"><span id="axe_exec">axe.exec</span></h2>
+<p>&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x5916;&#x90E8;&#x7A0B;&#x5E8F;&#xFF0C;&#x8C03;&#x7528;&#x540E;&#x5C06;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x5E76;&#x6267;&#x884C;&#x540E;&#x7EE7;&#x4EE3;&#x7801;&#xFF0C;&#x4E0D;&#x7B49;&#x5F85;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x5916;&#x90E8;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;
+&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4E3A;&#x8981;&#x8C03;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E3A;&#x5176;&#x8C03;&#x7528;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.exec(<span class="hljs-string">&apos;notepad.exe&apos;</span>);
+</code></pre>
+<h2 id="axeexecwait"><span id="axe_execWait">axe.execWait</span></h2>
+<p>&#x540C;&#x6B65;&#x8C03;&#x7528;&#x5916;&#x90E8;&#x7A0B;&#x5E8F;&#xFF0C;&#x8C03;&#x7528;&#x540E;&#x5C06;&#x7B49;&#x5F85;&#x5916;&#x90E8;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x540E;&#x7EE7;&#x4EE3;&#x7801;&#x3002;
+&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4E3A;&#x8981;&#x8C03;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E3A;&#x5176;&#x8C03;&#x7528;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.exitWait(<span class="hljs-string">&apos;ping&apos;</span>, <span class="hljs-string">&apos;127.0.0.1&apos;</span>);
+</code></pre>
+<h2 id="axetostring"><span id="axe_toString">axe.toString</span></h2>
+<p>&#x8FD4;&#x56DE; axe &#x6269;&#x5C55;&#x5BF9;&#x8C61;&#x7684;&#x5177;&#x4F53;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.external.axe);
+
+axeBrowser <span class="hljs-number">1.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>
+</code></pre>
+<h2 id="axesettitle"><span id="axe_setTitle">axe.setTitle</span></h2>
+<p>&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x6807;&#x9898;&#xFF0C;&#x5305;&#x62EC;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x6807;&#x9898;&#x548C;&#x547D;&#x4EE4;&#x884C;&#x7EC8;&#x7AEF;&#x7A97;&#x53E3;&#x6807;&#x9898;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.external.axe.setTitle(<span class="hljs-string">&apos;&#x8FD9;&#x662F;&#x7531; JavaScript &#x8BBE;&#x7F6E;&#x7684;&#x7A97;&#x53E3;&#x6807;&#x9898;&apos;</span>);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="args.html#timeout" class="navigation navigation-prev " aria-label="Previous page: timeout">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="jscall.html#axe" class="navigation navigation-next " aria-label="Next page: axe">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JavaScript 扩展","level":"1.4","depth":1,"next":{"title":"axe","level":"1.4.1","depth":2,"anchor":"#axe","path":"jscall.md","ref":"jscall.md#axe","articles":[]},"previous":{"title":"timeout","level":"1.3.10","depth":2,"anchor":"#timeout","path":"args.md","ref":"args.md#timeout","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","chapter-fold","expandable-chapters","search-pro","splitter","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"http://axeBrowser.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"axeBrowser 使用手册","language":"zh-hans","gitbook":"*"},"file":{"path":"jscall.md","mtime":"2020-05-07T08:30:59.396Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T04:17:38.608Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
