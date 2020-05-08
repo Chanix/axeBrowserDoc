@@ -83,3 +83,9 @@ axeBrowser 1.0.0.0
 ```javascript
 window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
 ```
+## <span id = "axe_scrollPos">axe.scrollPos</span>
+浏览器窗口移动到指定位置，参数为x，y坐标。可以使用负数， (-1, -1) 即为右下角。
+
+```javascript
+window.external.axe.scrollPos(-1, -1);
+```
