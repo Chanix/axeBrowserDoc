@@ -29,7 +29,7 @@
   * [axe.setTitle](jscall.md#axe_setTitle)
   * [axe.scrollPos](jscall.md#axe_scrollPos)
   * [axe.toString](jscall.md#axe_toString)
-* [应用范例](example.md)
+* [应用范例](todo.md)
 * [常见问题与解答](faq.md)
-* [版本与历史](history.md)
+* [版本与历史](todo.md)
 
