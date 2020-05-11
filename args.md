@@ -105,7 +105,7 @@ doStart();
 指定日志级别，日志会在独立的终端窗口中显示，默认为 none。axeBrowser 支持以下日志级别：fine、info、debug、warn、error、fatal、none。
 
 ## <span id = "wait_mode">wait_mode</span>
-指定等待首页加载完毕的模式。axeBrowser 将在首页装载完毕后，进行后继的调用脚本、调用入口函数等工作。默认值为 wait。
+指定等待首页加载完毕的模式。axeBrowser 将在首页装载完毕后，进行后继的调用脚本、调用入口函数等工作。默认值为 waitdoc。
 
 | 值 | 说明 |
 |--- |------|

@@ -9,11 +9,11 @@ axeBrowser 为浏览器提供了一个扩展对象 axe。JavaScript 可以通过
 
 例如：
 ```javascript
-var _axe = window.external.axe;
-if (_axe == null) {
+var AXE = window.external.axe;
+if (AXE == null) {
     alert('请检查：当前运行环境似乎不是 axeBrowser ？');
 } else {
-    alert(_axe);
+    alert(AXE);
 }
 ```
 
@@ -89,3 +89,13 @@ window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
 ```javascript
 window.external.axe.scrollPos(-1, -1);
 ```
+## <span id = "axe_file_readString">axe.file.readString</span>
+axe.file.readString(filename);
+
+以字符串方式读取指定文件，注意该函数将一次性读取文件到内存后再返回，请不要读取过大的文件。出于安全考虑，文件必须位于 axeBrowser 执行文件所在的文件夹或子文件夹内。
+
+## <span id = "axe_file_writeString">axe.file.writeString</span>
+axe.file.writeString(filename, content, if_append);
+
+写入文件。出于安全考虑，文件必须位于 axeBrowser 执行文件所在的文件夹或子文件夹内。
+

@@ -4,10 +4,13 @@ axeBrowser is a <font color=red>browser</font>, <font color=red>**a**</font>utom
 
 axeBrowser 是一个浏览器，可以**方便**的进行功能**扩展**和**自动化**操作。
 
+[免费下载](history.md)
+
 ## 功能和特点
 - 内置浏览器，提供 JavaScript 运行环境；
 - 提供内置扩展对象供 JavaScript 调用，扩展功能；
 - 多种运行模式（命令行模式、图形应用模式，调试模式）；
+- Javascript 可操作所有 DOM、window 等浏览器中才有的对象。
 
 ## 用途和作用
 axeBrowser 本质上是一个通过浏览器环境提供 javascript 运行环境的脚本执行工具，从某种意义上而言和 node.js 很类似。

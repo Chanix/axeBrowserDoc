@@ -1,7 +1,7 @@
 # axeBrowser 使用手册
 
 * [简介与说明](README.md)
-* [免费下载](download.md)
+* [下载与历史](history.md)
 * [运行流程](how_to_run.md)
 * [命令行参数](args.md)
   * [runas](args.md#runas)
@@ -31,5 +31,4 @@
   * [axe.toString](jscall.md#axe_toString)
 * [应用范例](todo.md)
 * [常见问题与解答](faq.md)
-* [版本与历史](todo.md)
 
