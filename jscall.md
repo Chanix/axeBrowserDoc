@@ -1,6 +1,7 @@
 # JavaScript 扩展
-axeBrowser 在不断的更新和完善中，因此内置的扩展也会有修改和增减。在进行修改和增减时，会尽量的保持兼容性，使原有扩展代码无需进行修改。请随时关注最新的文档说明。
+axeBrowser 在不断的更新和完善中，因此内置的扩展也会有修改和增减。在进行修改和增减时，会尽量的保持兼容性，使原有的脚本无需进行修改。请随时关注最新的文档说明。
 
+---
 
 ## <span id = "axe">axe</span>
 axeBrowser 为浏览器提供了一个扩展对象 axe。JavaScript 可以通过 window.external.axe 获得，并通过这个扩展对象对功能进行扩展。
@@ -17,11 +18,29 @@ if (AXE == null) {
 }
 ```
 
-
+---
 
 ## <span id = "axe_getArgv">axe.getArgv</span>
-获取指定的命令行参数值，如果该命令行参数没有指定，则返回空。
+#### 定义和用法
+getArgv 用于提取执行 axeBrowser 时，指定的命令行参数值。
 
+##### 语法
+```javascript
+window.external.axe.getArgv(arg_name)
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| arg_name| 命令行参数的名称 |
+
+#### 返回值
+一个字符串，值为指定命令行参数的值。若没有指定该参数值，则返回 null。
+
+#### 提示
+由于特殊字符和命令行环境的存在，指定命令行参数时，请按实际情况进行转义。建议用 " 将参数值包含起来。
+
+#### 实例
+执行命令行为
 ```
 axeBrowser -home qq.com -p1 test;
 ```
@@ -34,8 +53,14 @@ qq.com
 test
 ```
 
+---
+
 ## <span id = "axe_log">axe.log</span>
 在命令行窗口中打印日志，如果命令行窗口没有打开将自动打开。本函数变量为变长，接受多个参数。打印日志时，多个参数之间用制表符分隔。
+
+axe.log(str);
+
+axe.log(str1, str2, str3 ...);
 
 ```javascript
 window.external.axe.log('This line is a log.');
@@ -45,13 +70,31 @@ This line is a log.
 This line is 1st    2nd 3rd
 ```
 
+---
 
 ## <span id = "axe_exit">axe.exit</span>
+#### 定义和用法
 立即退出 axeBrowser。
 
+##### 语法
+```javascript
+window.external.axe.exit()
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| 无|  |
+
+#### 返回值
+无。
+
+
+#### 实例
 ```javascript
 window.external.axe.exit();
 ```
+
+---
 
 ## <span id = "axe_exec">axe.exec</span>
 异步调用外部程序，调用后将立即返回并执行后继代码，不等待被调用的外部程序执行完毕。
