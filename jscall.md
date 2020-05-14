@@ -18,76 +18,100 @@ if (AXE == null) {
 }
 ```
 
+
+*注意：在后继章节中，将使用 <font color=red>AXE</font> 作为 “window.external.axe” 的缩写。*
+
+
 ---
 
 ## <span id = "axe_getArgv">axe.getArgv</span>
 #### 定义和用法
-getArgv 用于提取执行 axeBrowser 时，指定的命令行参数值。
+用于提取执行 axeBrowser 时，指定的命令行参数值。
 
-##### 语法
+
 ```javascript
 window.external.axe.getArgv(arg_name)
 ```
 
 | 参数 | 描述 |
 | :--- | :--- |
-| arg_name| 命令行参数的名称 |
+| arg_name | 字符串，命令行参数的名称 |
 
 #### 返回值
-一个字符串，值为指定命令行参数的值。若没有指定该参数值，则返回 null。
+一个字符串，值为指定命令行参数的值。若没有指定该参数，则返回 null。若指定了该参数，但没有定义值，则返回空字符串。
 
 #### 提示
-由于特殊字符和命令行环境的存在，指定命令行参数时，请按实际情况进行转义。建议用 " 将参数值包含起来。
+由于特殊字符和命令行环境的存在，指定命令行参数时，请按实际情况进行转义。建议用双引号 “"”  将参数值包含起来。
 
 #### 实例
-执行命令行为
+命令行：
 ```
-axeBrowser -home qq.com -p1 test;
+axeBrowser -home qq.com -p1 test1 -p2;
 ```
 
-```javascript
-window.external.axe.getArgv('home');
-window.external.axe.getArgv('p1');
-
-qq.com
-test
-```
+| 调用值 | 返回值 | 描述 |
+| :--- | :--- | :--- |
+| AXE.getArgv('home')   | 'qq.com'  | 指定了参数指定了值 |
+| AXE.getArgv('p1')     | 'test1'   | 指定了参数指定了值 |
+| AXE.getArgv('p2')     | ''        | 指定了参数，没有指定值，返回空字符串 |
+| AXE.getArgv('home')   | null      | 没有指定参数，返回 null |
 
 ---
 
 ## <span id = "axe_log">axe.log</span>
-在命令行窗口中打印日志，如果命令行窗口没有打开将自动打开。本函数变量为变长，接受多个参数。打印日志时，多个参数之间用制表符分隔。
+#### 定义和用法
+在命令行窗口中显示日志，如果命令行窗口没有打开将自动打开。支持多个参数，显示时多个参数间使用制表符分隔，并且在最后换行。
 
-axe.log(str);
-
-axe.log(str1, str2, str3 ...);
 
 ```javascript
-window.external.axe.log('This line is a log.');
-window.external.axe.log('This line is 1st', '2nd', '3rd');
+window.external.axe.log(p1, p2, p3 ...)
+```
 
-This line is a log.
-This line is 1st    2nd 3rd
+| 参数 | 描述 |
+| :--- | :--- |
+| p1, p2, p3 ... | 要显示的内容，可以为变量或者表达式 |
+
+#### 返回值
+无
+
+#### 提示
+如果参数不是字符串类型，那么将试图自动转换为字符串后再显示。
+
+#### 实例
+脚本：
+```javascript
+window.external.axe.log();
+window.external.axe.log('This is a string');
+window.external.axe.log(null);
+window.external.axe.log('String', 12345, null, 4+5, 'Str'=='Str');
+
+```
+输出：
+
+```javascript
+
+This is a string
+
+String  12345   null    9       true
 ```
 
 ---
 
 ## <span id = "axe_exit">axe.exit</span>
 #### 定义和用法
-立即退出 axeBrowser。
+发送程序终止消息，立即退出 axeBrowser。
 
-##### 语法
+
 ```javascript
 window.external.axe.exit()
 ```
 
 | 参数 | 描述 |
 | :--- | :--- |
-| 无|  |
+| 无|  ||
 
 #### 返回值
-无。
-
+无
 
 #### 实例
 ```javascript
@@ -97,35 +121,100 @@ window.external.axe.exit();
 ---
 
 ## <span id = "axe_exec">axe.exec</span>
-异步调用外部程序，调用后将立即返回并执行后继代码，不等待被调用的外部程序执行完毕。
-接收两个参数，第一个为要调用的程序名，第二个为其调用参数。
+#### 定义和用法
+**异步**调用外部程序，调用后将立即返回并执行后继代码。
 
 ```javascript
-window.external.axe.exec('notepad.exe');
+window.external.axe.exec(program, args = '')
 ```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| program   | 程序路径或系统命令 |
+| args      | 调用外部程序时传递的参数，默认值为空字符串 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+window.external.axe.log('before');
+window.external.axe.exec('notepad.exe');
+window.external.axe.log('after');
+```
+
+---
 
 ## <span id = "axe_execWait">axe.execWait</span>
-同步调用外部程序，调用后将等待外部程序执行完毕后，再执行后继代码。
-接收两个参数，第一个为要调用的程序名，第二个为其调用参数。
+#### 定义和用法
+**同步**调用外部程序，调用后脚本将挂起并等待外部程序执行完毕后，再执行后继代码。
 
 ```javascript
-window.external.axe.exitWait('ping', '127.0.0.1');
+window.external.axe.execWait(program, args = '')
 ```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| program   | 程序路径或系统命令 |
+| args      | 调用外部程序时传递的参数，默认值为空字符串 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+window.external.axe.log('before');
+window.external.axe.execWait('notepad.exe');
+window.external.axe.log('after');
+```
+
+---
+
 ## <span id = "axe_toString">axe.toString</span>
-返回 axe 扩展对象的具体信息。
+#### 定义和用法
+扩展对象 axe 进行字符串序列化，返回 axe 扩展对象的名称和版本信息。
 
 ```javascript
-console.log(window.external.axe);
-
-axeBrowser 1.0.0.0
+window.external.axe.toString()
 ```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| 无   |||
+
+#### 返回值
+字符串，说明 axe 对象的名称和版本。
+
+#### 实例
+```javascript
+alert(window.external.axe);
+alert(window.external.axe.toString());
+```
+
+---
 
 ## <span id = "axe_setTitle">axe.setTitle</span>
-设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。
+#### 定义和用法
+设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。命令行窗口会附加“[console]”字样。如果使用的 axeBrowser 没有注册，则还会附加“【未注册】”字样。
 
+```javascript
+window.external.axe.setTitle(title)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| title | 字符串，将设置为窗口的标题。 |
+
+#### 返回值
+无
+
+#### 实例
 ```javascript
 window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
 ```
+
+---
+
 ## <span id = "axe_scrollPos">axe.scrollPos</span>
 浏览器窗口移动到指定位置，参数为x，y坐标。可以使用负数， (-1, -1) 即为右下角。
 

@@ -6,7 +6,6 @@
 * [命令行参数](args.md)
   * [entrypoint](args.md#entrypoint)
   * [home](args.md#home)
-  * [loglevel](args.md#loglevel)
   * [proxy](args.md#proxy)
   * [referer](args.md#referer)
   * [runas](args.md#runas)
