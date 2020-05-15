@@ -4,10 +4,19 @@
 axeBrowser 使用的内置浏览器为 miniblink。miniblink 的首页 http://miniblink.net。
 
 ## 支持 TypeScript 吗？
-和普通浏览器一样，请通过工具将 TS 转为 js 运行。
+miniblink 支持的我们都支持 :)。
+
+## 支持 WASM 吗？
+miniblink 支持的我们都支持 :)。
+
+## axeBrowser 是 32 位的应用程序还是 64 位的？
+32 位。
+
+## 可否提供 64 位 的 axeBrowser 版本？
+不能，受限于我们的开发工具，我们只能提供 32 位的版本。32 位足够，也能在 64 系统上运行，正常情况下不太可能出现超出 32 位限制的状况吧…………
 
 ## 希望增加功能
 请联系我们，我们会综合考虑对需求进行取舍，然后尽快的加入功能。
 
-我们的取舍原则是：能用 JavaScript 实现的应当都尽量使用 JavaScript 来实现。实在无法满足的，才会通过 axeBrowser 来扩展实现。
+我们的取舍原则是**“尽量的减少和简化 axeBrowser 的体积以及逻辑”**。能用 JavaScript 实现的应当都尽量使用 JavaScript 来实现。实在无法满足或者顺带的，才会通过 axeBrowser 来扩展实现。
 

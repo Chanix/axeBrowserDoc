@@ -19,7 +19,7 @@ if (AXE == null) {
 ```
 
 
-*注意：在后继章节中，将使用 <font color=red>AXE</font> 作为 “window.external.axe” 的缩写。*
+*注意：在后继章节中，将使用 **<font color=red>AXE</font>** 作为 “window.external.axe” 的缩写。*
 
 
 ---
@@ -216,18 +216,77 @@ window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
 ---
 
 ## <span id = "axe_scrollPos">axe.scrollPos</span>
-浏览器窗口移动到指定位置，参数为x，y坐标。可以使用负数， (-1, -1) 即为右下角。
+#### 定义和用法
+改变浏览器窗口的滚动条位置，可使用负数指定相对于右下角的坐标，-1,-1表示滚动到页面右、下角。
 
+```javascript
+window.external.axe.setTitle(title)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| x | 数值，横向滚动条的位置。 |
+| y | 数值，纵向滚动条的位置。 |
+
+#### 返回值
+无
+
+#### 实例
 ```javascript
 window.external.axe.scrollPos(-1, -1);
 ```
-## <span id = "axe_file_readString">axe.file.readString</span>
-axe.file.readString(filename);
+滚动条移动到右下角的位置。
 
-以字符串方式读取指定文件，注意该函数将一次性读取文件到内存后再返回，请不要读取过大的文件。出于安全考虑，文件必须位于 axeBrowser 执行文件所在的文件夹或子文件夹内。
+---
+
+## <span id = "axe_file">axe.file</span>
+所有相关本地文件操作的功能都归并在 axe.file 中。处于安全的考量，仅支持对 axeBrowser 执行文件所在的文件夹或子文件夹内的文件进行操作。此限制为硬编码实现，通过对文件的路径和 axeBrowser 所在文件夹的路径进行比对进行来判断。
+
+*确实有需求，请考虑 axeBrowser 的存放位置或用操作系统提供的功能来绕过这个限制。*
+
+---
+
+## <span id = "axe_file_readString">axe.file.readString</span>
+#### 定义和用法
+以字符串方式读取指定文件，注意该函数将一次性读取文件全部内容到内存后再返回，请不要读取过大的文件。
+
+```javascript
+window.external.axe.file.readString(filename);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| filename  | 要进行读操作的文件名 |
+
+#### 返回值
+字符串形式的文件本文内容。如果指定的文件读取失败（例如安全权限限制、文件不存在等），则返回 null。
+
+#### 实例
+```javascript
+window.external.axe.file.readString('readme.txt');
+```
+
+---
 
 ## <span id = "axe_file_writeString">axe.file.writeString</span>
-axe.file.writeString(filename, content, if_append);
+#### 定义和用法
+将指定的内容以字符串方式写入文件，可以指定追加或者覆盖模式。执行时会自动创建所需的所有文件夹。
 
-写入文件。出于安全考虑，文件必须位于 axeBrowser 执行文件所在的文件夹或子文件夹内。
+```javascript
+window.external.axe.file.writeString(filename, content, ifAppend = false);
+```
 
+| 参数      | 描述 |
+| :---      | :--- |
+| filename  | 要进行写操作的文件名  |
+| content   | 要写入的文本内容      |
+| ifAppend  | 是否追加模式，默认为否，即覆盖模式。 |
+
+#### 返回值
+写入成功返回 true，否则返回 false。
+
+#### 实例
+```javascript
+window.external.axe.file.writeString('readme.txt', 'this is a test for append.', true);
+window.external.axe.file.writeString('readme.txt', 'this is a test for overwrite.');
+```
