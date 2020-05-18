@@ -1,0 +1,741 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>获取bing每日壁纸并保存 · axeBrowser 使用手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="http://axeBrowser.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../faq.html" />
+    
+    
+    <link rel="prev" href="../example.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介与说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../history.html">
+            
+                <a href="../history.html">
+            
+                    
+                    下载与历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_to_run.html">
+            
+                <a href="../how_to_run.html">
+            
+                    
+                    运行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../args.html">
+            
+                <a href="../args.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../args.html">
+            
+                <a href="../args.html#entrypoint">
+            
+                    
+                    entrypoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../args.html">
+            
+                <a href="../args.html#home">
+            
+                    
+                    home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../args.html">
+            
+                <a href="../args.html#proxy">
+            
+                    
+                    proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../args.html">
+            
+                <a href="../args.html#referer">
+            
+                    
+                    referer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../args.html">
+            
+                <a href="../args.html#runas">
+            
+                    
+                    runas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../args.html">
+            
+                <a href="../args.html#script">
+            
+                    
+                    script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../args.html">
+            
+                <a href="../args.html#timeout">
+            
+                    
+                    timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    wait_mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    waitdoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.2.1" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    wait_url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2.2" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    wait_timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.3" data-path="../args.html">
+            
+                <a href="../args.html#wait_mode">
+            
+                    
+                    nowait
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../args.html">
+            
+                <a href="../args.html#useragent">
+            
+                    
+                    useragent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../jscall.html">
+            
+                <a href="../jscall.html">
+            
+                    
+                    JavaScript 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe">
+            
+                    
+                    axe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_exec">
+            
+                    
+                    axe.exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_execWait">
+            
+                    
+                    axe.execWait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_exit">
+            
+                    
+                    axe.exit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_file">
+            
+                    
+                    axe.file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_file_readString">
+            
+                    
+                    axe.file.readString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_file_writeString">
+            
+                    
+                    axe.file.writeString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_getArgv">
+            
+                    
+                    axe.getArgv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_log">
+            
+                    
+                    axe.log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_setTitle">
+            
+                    
+                    axe.setTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_scrollPos">
+            
+                    
+                    axe.scrollPos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../jscall.html">
+            
+                <a href="../jscall.html#axe_toString">
+            
+                    
+                    axe.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../example.html">
+            
+                <a href="../example.html">
+            
+                    
+                    应用范例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="get_bing_bg.html">
+            
+                <a href="get_bing_bg.html">
+            
+                    
+                    获取bing每日壁纸并保存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    常见问题与解答
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >获取bing每日壁纸并保存</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x83B7;&#x53D6;bing&#x6BCF;&#x65E5;&#x58C1;&#x7EB8;&#x5E76;&#x4FDD;&#x5B58;">&#x83B7;&#x53D6;bing&#x6BCF;&#x65E5;&#x58C1;&#x7EB8;&#x5E76;&#x4FDD;&#x5B58;</h1>
+<p>&#x5C06;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x4FDD;&#x5B58;&#x4E3A; get_bing_bg.js&#xFF0C;&#x5B58;&#x653E;&#x5728; axeBrowser.exe &#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x53D8;&#x91CF; AXE&#xFF0C;&#x65B9;&#x4FBF;&#x8C03;&#x7528;&#x3002;</span>
+<span class="hljs-keyword">var</span> AXE = <span class="hljs-built_in">window</span>.external.axe;
+
+<span class="hljs-comment">// &#x663E;&#x793A;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD0;&#x884C;&#x5F00;&#x59CB;&#x3002;</span>
+AXE.log(<span class="hljs-string">&apos;&gt;&gt;&gt; START&apos;</span>);
+
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x6807;&#x9898;</span>
+AXE.setTitle(<span class="hljs-string">&apos;&#x83B7;&#x53D6;&#x5E76;&#x4FDD;&#x5B58;Bing&#x80CC;&#x666F;&#x58C1;&#x7EB8;&apos;</span>);
+
+<span class="hljs-comment">// &#x83B7;&#x5F97;&#x80CC;&#x666F;&#x56FE;&#x7684;&#x7F51;&#x5740;</span>
+<span class="hljs-keyword">var</span> imgurl = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;bgLink&apos;</span>).href;
+
+<span class="hljs-comment">// &#x62FC;&#x51D1;&#x51FA;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF1A;YYYY-MM-DD.jpg</span>
+<span class="hljs-keyword">var</span> dateToday = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+<span class="hljs-keyword">var</span> filename = dateToday.getFullYear() + <span class="hljs-string">&apos;-&apos;</span> + (dateToday.getMonth() + <span class="hljs-number">1</span>) + <span class="hljs-string">&apos;-&apos;</span> + dateToday.getDate() + <span class="hljs-string">&apos;.jpg&apos;</span>;
+
+<span class="hljs-comment">// &#x540C;&#x6B65;&#x8C03;&#x7528; curl.exe&#xFF08;Win10 &#x4E2D;&#x81EA;&#x5E26;&#xFF09; &#x6765;&#x4E0B;&#x8F7D;&#x5E76;&#x4FDD;&#x5B58;&#x56FE;&#x7247;&#x3002;</span>
+AXE.execWait(<span class="hljs-string">&apos;curl&apos;</span>, <span class="hljs-string">&apos;&quot;&apos;</span> + imgurl + <span class="hljs-string">&apos;&quot; -o &quot;&apos;</span> + filename + <span class="hljs-string">&apos;&quot;&apos;</span>);
+
+<span class="hljs-comment">// &#x663E;&#x793A;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD0;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</span>
+AXE.log(<span class="hljs-string">&apos;&lt;&lt;&lt; END&apos;</span>);
+
+<span class="hljs-comment">// &#x9000;&#x51FA; axeBrowser</span>
+AXE.exit();
+</code></pre>
+<p>&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x5207;&#x6362;&#x5230; axeBrowser.exe &#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>.\axeBrowser -home &quot;https://cn.bing.com&quot; -script &quot;get_bing_bg.js&quot; -runas console
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../example.html" class="navigation navigation-prev " aria-label="Previous page: 应用范例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../faq.html" class="navigation navigation-next " aria-label="Next page: 常见问题与解答">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"获取bing每日壁纸并保存","level":"1.6.1","depth":2,"next":{"title":"常见问题与解答","level":"1.7","depth":1,"path":"faq.md","ref":"faq.md","articles":[]},"previous":{"title":"应用范例","level":"1.6","depth":1,"path":"example.md","ref":"example.md","articles":[{"title":"获取bing每日壁纸并保存","level":"1.6.1","depth":2,"path":"examples/get_bing_bg.md","ref":"examples/get_bing_bg.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","chapter-fold","expandable-chapters","search-pro","splitter","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"http://axeBrowser.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"axeBrowser 使用手册","language":"zh-hans","gitbook":"*"},"file":{"path":"examples/get_bing_bg.md","mtime":"2020-05-15T04:47:08.861Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-18T06:23:10.939Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
