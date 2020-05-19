@@ -220,7 +220,7 @@ window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
 改变浏览器窗口的滚动条位置，可使用负数指定相对于右下角的坐标，-1,-1表示滚动到页面右、下角。
 
 ```javascript
-window.external.axe.setTitle(title)
+window.external.axe.scrollPos(x, y)
 ```
 
 | 参数  | 描述 |

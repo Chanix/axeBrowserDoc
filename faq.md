@@ -3,6 +3,9 @@
 ## axeBrowser 内置的浏览器是什么？
 axeBrowser 使用的内置浏览器为 miniblink。miniblink 的首页 http://miniblink.net。
 
+## axeBrowser 用什么语言开发的？
+axeBrowser 开发所使用的语言和工具是 aardio。aardio 的首页 http://aardio.com。
+
 ## 支持 TypeScript 吗？
 miniblink 支持的我们都支持 :)。
 
