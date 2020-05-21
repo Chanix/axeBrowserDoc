@@ -240,9 +240,7 @@ window.external.axe.scrollPos(-1, -1);
 ---
 
 ## <span id = "axe_file">axe.file</span>
-所有相关本地文件操作的功能都归并在 axe.file 中。处于安全的考量，axe.file 仅支持对 axeBrowser 执行文件所在的文件夹或子文件夹内的文件进行操作。此限制为硬编码实现，通过对文件的路径和 axeBrowser 所在文件夹的路径进行比对进行来判断。
-
-*若确有需求，请考虑调整 axeBrowser 的存放位置或以其他方式绕过（例如调用外部程序）。*
+所有相关本地文件操作的功能都归并在 axe.file 中。
 
 ---
 
