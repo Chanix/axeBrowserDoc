@@ -3,13 +3,11 @@
 将以下内容保存为 get_bing_bg.js，存放在 axeBrowser.exe 所在文件夹：
 ```javascript
 // 设置变量 AXE，方便调用。
-var AXE = window.external.axe;
-
 // 显示日志，运行开始。
-AXE.log('>>> START');
+__AXE__.log('>>> START');
 
 // 设置窗口标题
-AXE.setTitle('获取并保存Bing背景壁纸');
+__AXE__.setTitle('获取并保存Bing背景壁纸');
 
 // 获得背景图的网址
 var imgurl = document.getElementById('bgLink').href;
@@ -19,13 +17,13 @@ var dateToday = new Date();
 var filename = dateToday.getFullYear() + '-' + (dateToday.getMonth() + 1) + '-' + dateToday.getDate() + '.jpg';
 
 // 同步调用 curl.exe（Win10 中自带） 来下载并保存图片。
-AXE.execWait('curl', '"' + imgurl + '" -o "' + filename + '"');
+__AXE__.execWait('curl', '"' + imgurl + '" -o "' + filename + '"');
 
 // 显示日志，运行完毕。
-AXE.log('<<< END');
+__AXE__.log('<<< END');
 
 // 退出 axeBrowser
-AXE.exit();
+__AXE__.exit();
 ```
 
 打开命令行窗口，切换到 axeBrowser.exe 所在文件夹，执行命令：

@@ -28,31 +28,31 @@ axeBrowser -script js1.js,js2.js,js3.js
 
 js1.js
 ```javascript
-window.external.axe.log('this is js1.js')
+__AXE__.log('this is js1.js')
 
 ```
 
 js2.js
 ```javascript
 
-window.external.axe.log('this is js2.js');
+__AXE__.log('this is js2.js');
 ```
 
 js3.js
 ```javascript
-window.external.axe.log('this is js3.js');
+__AXE__.log('this is js3.js');
 
 ```
 
 最终合并并执行的 JavaScript 代码是：
 ```javascript
-window.external.axe.log('this is js1.js')
+__AXE__.log('this is js1.js')
 
 ;
 
-window.external.axe.log('this is js2.js');
+__AXE__.log('this is js2.js');
 ;
-window.external.axe.log('this is js3.js');
+__AXE__.log('this is js3.js');
 
 ;
 
@@ -69,7 +69,7 @@ axeBrowser -script js1.js -entrypoint doStart
 
 ```javascript
 function fn_test_log(a, b) {
-    window.external.axe.log(a, b);
+    __AXE__.log(a, b);
 }
 
 function doStart() {
@@ -80,7 +80,7 @@ function doStart() {
 最终合并并执行的 JavaScript 代码是：
 ```javascript
 function fn_test_log(a, b) {
-    window.external.axe.log(a, b);
+    __AXE__.log(a, b);
 }
 
 function doStart() {
@@ -123,4 +123,8 @@ doStart();
 ## <span id = "height">height</span>
 设置浏览器窗口的高度。参数值为一个整数，取值范围为 100 ~ 65535。
 
+## <span id = "dpi">dpi</span>
+打开 dpi 自动缩放功能，改善高分辨率下的显示。
 
+## <span id = "help">help</span>
+显示简要帮助

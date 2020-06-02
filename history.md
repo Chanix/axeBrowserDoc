@@ -3,6 +3,12 @@
 ## 正在进行中的工作：
 - 重构 dll 与 控件 包装调用代码；
 - 升级 miniblink 和相关控件；
+- 扩展对象调用方式修改，在 JavaScript 中直接访问变量 \_\_AXE\_\_ 即可;
+        原因：window.external 已从 Web 标准中删除；
+        window.external.axe 仍可使用，但请尽量使用新的调用方式，其将会在未来的版本中移除；
+- 新增扩展：剪贴板；
+    - [\_\_AXE\_\_.win.clip.read](jscall.md#axe_win_clip_read)
+    - [\_\_AXE\_\_.win.clip.write](jscall.md#axe_win_clip_write)
 
 ## 2020/06/01
 - 增加 VLC 支持（32位）；

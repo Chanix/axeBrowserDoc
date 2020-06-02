@@ -3,34 +3,30 @@ axeBrowser 在不断的更新和完善中，因此内置的扩展也会有修改
 
 ---
 
-## <span id = "axe">axe</span>
-axeBrowser 为浏览器提供了一个扩展对象 axe。JavaScript 可以通过 window.external.axe 获得，并通过这个扩展对象对功能进行扩展。
+## <span id = "axe">\_\_AXE\_\_</span>
+axeBrowser 为浏览器提供了扩展，可以在 JavaScript 代码中通过预设变量 “\_\_AXE\_\_” 获得，并通过其进行功能扩展。
 
-可以通过这个扩展对象，判断当前是否属于 axeBrowser 环境并获取详细信息。
+这个变量是否存在可以作为当前是否 axeBrowser 环境的判断依据。注册版可以修改这个预设变量的变量名。
 
 例如：
 ```javascript
-var AXE = window.external.axe;
-if (AXE == null) {
+if (__AXE__ == null) {
     alert('请检查：当前运行环境似乎不是 axeBrowser ？');
 } else {
-    alert(AXE);
+    alert(__AXE__);
 }
 ```
 
 
-*注意：在后继章节中，将使用 **<font color=red>AXE</font>** 作为 “window.external.axe” 的缩写。*
-
-
 ---
 
-## <span id = "axe_getArgv">axe.getArgv</span>
+## <span id = "axe_getArgv">\_\_AXE\_\_.getArgv</span>
 #### 定义和用法
 用于提取执行 axeBrowser 时，指定的命令行参数值。
 
 
 ```javascript
-window.external.axe.getArgv(arg_name)
+__AXE__.getArgv(arg_name)
 ```
 
 | 参数 | 描述 |
@@ -51,20 +47,20 @@ axeBrowser -home qq.com -p1 test1 -p2;
 
 | 调用值 | 返回值 | 描述 |
 | :--- | :--- | :--- |
-| AXE.getArgv('home')   | 'qq.com'  | 指定了参数指定了值 |
-| AXE.getArgv('p1')     | 'test1'   | 指定了参数指定了值 |
-| AXE.getArgv('p2')     | ''        | 指定了参数，没有指定值，返回空字符串 |
-| AXE.getArgv('home')   | null      | 没有指定参数，返回 null |
+| \_\_AXE\_\_.getArgv('home')   | 'qq.com'  | 指定了参数指定了值 |
+| \_\_AXE\_\_.getArgv('p1')     | 'test1'   | 指定了参数指定了值 |
+| \_\_AXE\_\_.getArgv('p2')     | ''        | 指定了参数，没有指定值，返回空字符串 |
+| \_\_AXE\_\_.getArgv('home')   | null      | 没有指定参数，返回 null |
 
 ---
 
-## <span id = "axe_log">axe.log</span>
+## <span id = "axe_log">\_\_AXE\_\_.log</span>
 #### 定义和用法
 在命令行窗口中显示日志，如果命令行窗口没有打开将自动打开。支持多个参数，显示时多个参数间使用制表符分隔，并且在最后换行。
 
 
 ```javascript
-window.external.axe.log(p1, p2, p3 ...)
+__AXE__.log(p1, p2, p3 ...)
 ```
 
 | 参数 | 描述 |
@@ -80,10 +76,10 @@ window.external.axe.log(p1, p2, p3 ...)
 #### 实例
 脚本：
 ```javascript
-window.external.axe.log();
-window.external.axe.log('This is a string');
-window.external.axe.log(null);
-window.external.axe.log('String', 12345, null, 4+5, 'Str'=='Str');
+__AXE__.log();
+__AXE__.log('This is a string');
+__AXE__.log(null);
+__AXE__.log('String', 12345, null, 4+5, 'Str'=='Str');
 
 ```
 输出：
@@ -97,13 +93,13 @@ String  12345   null    9       true
 
 ---
 
-## <span id = "axe_exit">axe.exit</span>
+## <span id = "axe_exit">\_\_AXE\_\_.exit</span>
 #### 定义和用法
 发送程序终止消息，立即退出 axeBrowser。
 
 
 ```javascript
-window.external.axe.exit()
+__AXE__.exit()
 ```
 
 | 参数 | 描述 |
@@ -115,17 +111,17 @@ window.external.axe.exit()
 
 #### 实例
 ```javascript
-window.external.axe.exit();
+__AXE__.exit();
 ```
 
 ---
 
-## <span id = "axe_exec">axe.exec</span>
+## <span id = "axe_exec">\_\_AXE\_\_.exec</span>
 #### 定义和用法
 **异步**调用外部程序，调用后将立即返回并执行后继代码。
 
 ```javascript
-window.external.axe.exec(program, args = '')
+__AXE__.exec(program, args = '')
 ```
 
 | 参数      | 描述 |
@@ -138,19 +134,19 @@ window.external.axe.exec(program, args = '')
 
 #### 实例
 ```javascript
-window.external.axe.log('before');
-window.external.axe.exec('notepad.exe');
-window.external.axe.log('after');
+__AXE__.log('before');
+__AXE__.exec('notepad.exe');
+__AXE__.log('after');
 ```
 
 ---
 
-## <span id = "axe_execWait">axe.execWait</span>
+## <span id = "axe_execWait">\_\_AXE\_\_.execWait</span>
 #### 定义和用法
 **同步**调用外部程序，调用后脚本将挂起并等待外部程序执行完毕后，再执行后继代码。
 
 ```javascript
-window.external.axe.execWait(program, args = '')
+__AXE__.execWait(program, args = '')
 ```
 
 | 参数      | 描述 |
@@ -163,19 +159,19 @@ window.external.axe.execWait(program, args = '')
 
 #### 实例
 ```javascript
-window.external.axe.log('before');
-window.external.axe.execWait('notepad.exe');
-window.external.axe.log('after');
+__AXE__.log('before');
+__AXE__.execWait('notepad.exe');
+__AXE__.log('after');
 ```
 
 ---
 
-## <span id = "axe_toString">axe.toString</span>
+## <span id = "axe_toString">\_\_AXE\_\_.toString</span>
 #### 定义和用法
 扩展对象 axe 进行字符串序列化，返回 axe 扩展对象的名称和版本信息。
 
 ```javascript
-window.external.axe.toString()
+__AXE__.toString()
 ```
 
 | 参数      | 描述 |
@@ -187,18 +183,18 @@ window.external.axe.toString()
 
 #### 实例
 ```javascript
-alert(window.external.axe);
-alert(window.external.axe.toString());
+alert(__AXE__);
+alert(__AXE__.toString());
 ```
 
 ---
 
-## <span id = "axe_setTitle">axe.setTitle</span>
+## <span id = "axe_setTitle">\_\_AXE\_\_.setTitle</span>
 #### 定义和用法
 设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。命令行窗口会附加“[console]”字样。如果使用的 axeBrowser 没有注册，则还会附加“【未注册】”字样。
 
 ```javascript
-window.external.axe.setTitle(title)
+__AXE__.setTitle(title)
 ```
 
 | 参数  | 描述 |
@@ -210,17 +206,17 @@ window.external.axe.setTitle(title)
 
 #### 实例
 ```javascript
-window.external.axe.setTitle('这是由 JavaScript 设置的窗口标题');
+__AXE__.setTitle('这是由 JavaScript 设置的窗口标题');
 ```
 
 ---
 
-## <span id = "axe_scrollPos">axe.scrollPos</span>
+## <span id = "axe_scrollPos">\_\_AXE\_\_.scrollPos</span>
 #### 定义和用法
 改变浏览器窗口的滚动条位置，可使用负数指定相对于右下角的坐标，-1,-1表示滚动到页面右、下角。
 
 ```javascript
-window.external.axe.scrollPos(x, y)
+__AXE__.scrollPos(x, y)
 ```
 
 | 参数  | 描述 |
@@ -233,23 +229,23 @@ window.external.axe.scrollPos(x, y)
 
 #### 实例
 ```javascript
-window.external.axe.scrollPos(-1, -1);
+__AXE__.scrollPos(-1, -1);
 ```
 滚动条移动到右下角的位置。
 
 ---
 
-## <span id = "axe_file">axe.file</span>
-所有相关本地文件操作的功能都归并在 axe.file 中。
+## <span id = "axe_file">\_\_AXE\_\_.file</span>
+所有相关本地文件操作的功能都归并在 __AXE__.file 中。
 
 ---
 
-## <span id = "axe_file_readString">axe.file.readString</span>
+## <span id = "axe_file_readString">\_\_AXE\_\_.file.readString</span>
 #### 定义和用法
 以字符串方式读取指定文件，注意该函数将一次性读取文件全部内容到内存后再返回，请不要读取过大的文件。
 
 ```javascript
-window.external.axe.file.readString(filename);
+__AXE__.file.readString(filename);
 ```
 
 | 参数      | 描述 |
@@ -261,17 +257,17 @@ window.external.axe.file.readString(filename);
 
 #### 实例
 ```javascript
-window.external.axe.file.readString('readme.txt');
+__AXE__.file.readString('readme.txt');
 ```
 
 ---
 
-## <span id = "axe_file_writeString">axe.file.writeString</span>
+## <span id = "axe_file_writeString">\_\_AXE\_\_.file.writeString</span>
 #### 定义和用法
 将指定的内容以字符串方式写入文件，可以指定追加或者覆盖模式。执行时会自动创建所需的所有文件夹。
 
 ```javascript
-window.external.axe.file.writeString(filename, content, ifAppend = false);
+__AXE__.file.writeString(filename, content, ifAppend = false);
 ```
 
 | 参数      | 描述 |
@@ -285,6 +281,48 @@ window.external.axe.file.writeString(filename, content, ifAppend = false);
 
 #### 实例
 ```javascript
-window.external.axe.file.writeString('readme.txt', 'this is a test for append.', true);
-window.external.axe.file.writeString('readme.txt', 'this is a test for overwrite.');
+__AXE__.file.writeString('readme.txt', 'this is a test for append.', true);
+__AXE__.file.writeString('readme.txt', 'this is a test for overwrite.');
+```
+
+
+---
+
+## <span id = "axe_win_clip_read">\_\_AXE\_\_.win.clip.read</span>
+#### 定义和用法
+将指定的内容以字符串方式写入文件，可以指定追加或者覆盖模式。执行时会自动创建所需的所有文件夹。
+
+```javascript
+__AXE__.win.clip.read();
+```
+
+#### 返回值
+剪贴板中的内容（字符串）。
+
+#### 实例
+```javascript
+__AXE__.win.clip.read();
+```
+
+
+---
+
+## <span id = "axe_win_clip_write">\_\_AXE\_\_.win.clip.write</span>
+#### 定义和用法
+将指定的内容以字符串方式写入文件，可以指定追加或者覆盖模式。执行时会自动创建所需的所有文件夹。
+
+```javascript
+__AXE__.win.clip.write(content);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要写入剪贴板的内容（字符串）  |
+
+#### 返回值
+无。
+
+#### 实例
+```javascript
+__AXE__.win.clip.write('axeBrowser is great!');
 ```
