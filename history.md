@@ -3,12 +3,21 @@
 ## 正在进行中的工作：
 - 重构 dll 与 控件 包装调用代码；
 - 升级 miniblink 和相关控件；
+
+## 2020/06/08
+- 调整内嵌 miniblink 版本，提升健壮性；
+        原 20.3.3 存在经常性崩溃（win10下），事件查看器中一直报 node.dll 错误。
+        降级至 19.11.11 后明显的减少了崩溃；
+        但此两版本皆存在 cookies 处理错误，没有正确的处理等号；
+        导致某些站点出现 “cookies or request too large” 的情况，正在测试验证升级方案中。
 - 扩展对象调用方式修改，在 JavaScript 中直接访问变量 \_\_AXE\_\_ 即可;
         原因：window.external 已从 Web 标准中删除；
         window.external.axe 仍可使用，但请尽量使用新的调用方式，其将会在未来的版本中移除；
 - 新增扩展：剪贴板；
     - [\_\_AXE\_\_.win.clip.read](jscall.md#axe_win_clip_read)
     - [\_\_AXE\_\_.win.clip.write](jscall.md#axe_win_clip_write)
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200608.zip)
 
 ## 2020/06/01
 - 增加 VLC 支持（32位）；
