@@ -3,6 +3,25 @@
 ## 正在进行中的工作：
 - 重构 dll 与 控件 包装调用代码；
 - 升级 miniblink 和相关控件；
+- 处理调用 VLC 播放网络视频时出现的白屏问题；
+
+## 2020/06/18
+- 新增扩展：
+    - 获取当前进程id    [\_\_AXE\_\_.win.getProcessId](jscall.md#axe_win_getProcessId)
+    - 获取当前线程id    [\_\_AXE\_\_.win.getThreadId](jscall.md#axe_win_getThreadId)
+    - 获取环境变量      [\_\_AXE\_\_.win.getenv](jscall.md#axe_win_getenv)
+    - 设置环境变量      [\_\_AXE\_\_.win.setenv](jscall.md#axe_win_setenv)
+    - 增加环境变量      [\_\_AXE\_\_.win.addenv](jscall.md#axe_win_addenv)
+- 增加应用的图标（白板太难看，随便找了一个先顶上，有更好的请与我联系）
+- 整理与规范内置页面（axe://）；
+- 调整自动缩放策略，默认提供 dpi 自动缩放，通过命令行参数 nodpi 来设置取消；
+- 完善运行流程，增加打开网址前执行脚本，新增命令行参数：
+    - 打开前脚本        [prescript](todo.md)
+    - 打开前脚本入口    [preentrypoint](todo.md)
+- 优化 \_\_AXE\_\_.exec 的处理流程，原流程无必要的增加了脚本的控制难度；
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200618.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200618.zip) 
 
 ## 2020/06/08
 - 调整内嵌 miniblink 版本，提升健壮性；
@@ -17,7 +36,8 @@
     - [\_\_AXE\_\_.win.clip.read](jscall.md#axe_win_clip_read)
     - [\_\_AXE\_\_.win.clip.write](jscall.md#axe_win_clip_write)
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200608.zip)
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200608.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200608.zip) 
 
 ## 2020/06/01
 - 增加 VLC 支持（32位）；

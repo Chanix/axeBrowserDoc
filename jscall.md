@@ -326,3 +326,105 @@ __AXE__.win.clip.write(content);
 ```javascript
 __AXE__.win.clip.write('axeBrowser is great!');
 ```
+
+---
+
+## <span id = "axe_win_getProcessId">\_\_AXE\_\_.win.getProcessId</span>
+#### 定义和用法
+获取当前应用的进程id。
+
+```javascript
+__AXE__.win.getProcessId();
+```
+
+#### 返回值
+进程id。
+
+#### 实例
+```javascript
+__AXE__.log('当前进程号：', __AXE__.win.getProcessId());
+```
+
+---
+
+## <span id = "axe_win_getThreadId">\_\_AXE\_\_.win.getThreadId</span>
+#### 定义和用法
+获取当前应用主窗口的线程id。
+
+```javascript
+__AXE__.win.getThreadId();
+```
+
+#### 返回值
+进程id。
+
+#### 实例
+```javascript
+__AXE__.log('当前线程号：', __AXE__.win.getThreadId());
+```
+
+---
+
+## <span id = "axe_win_getenv">\_\_AXE\_\_.win.getenv</span>
+#### 定义和用法
+获取环境变量值。
+
+```javascript
+__AXE__.win.getenv(envname);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| envname  | 环境变量的名称  |
+
+#### 返回值
+指定环境变量值，若未指定返回空。
+
+#### 实例
+```javascript
+__AXE__.log('环境变量 PATH：', __AXE__.win.getenv('path'));
+```
+
+## <span id = "axe_win_setenv">\_\_AXE\_\_.win.setenv</span>
+#### 定义和用法
+设置环境变量值。
+
+```javascript
+__AXE__.win.getenv(envname, value);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| envname  | 环境变量的名称  |
+| value  | 环境变量的值  |
+
+#### 返回值
+设置环境变量。
+
+#### 实例
+```javascript
+__AXE__.win.setenv('TTT', 'ttt');
+```
+
+## <span id = "axe_win_addenv">\_\_AXE\_\_.win.addenv</span>
+#### 定义和用法
+设置环境变量值（仅当该环境变量不存在时）。
+
+```javascript
+__AXE__.win.addenv(envname, value);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| envname  | 环境变量的名称  |
+| value  | 环境变量的值  |
+
+#### 返回值
+设置环境变量。
+
+#### 实例
+```javascript
+__AXE__.win.addenv('TTT', 'ttt');
+```
+
+

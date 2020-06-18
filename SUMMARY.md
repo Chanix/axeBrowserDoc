@@ -4,7 +4,7 @@
 * [下载与历史](history.md)
 * [运行流程](how_to_run.md)
 * [命令行参数](args.md)
-  * [dpi](args.md#dpi)
+  * [nodpi](args.md#nodpi)
   * [entrypoint](args.md#entrypoint)
   * [help](args.md#help)
   * [home](args.md#home)
@@ -35,7 +35,11 @@
   * [\_\_AXE\_\_.toString](jscall.md#axe_toString)
   * [\_\_AXE\_\_.win.clip.read](jscall.md#axe_win_clip_read)
   * [\_\_AXE\_\_.win.clip.write](jscall.md#axe_win_clip_write)
-
+  * [\_\_AXE\_\_.win.getProcessId](jscall.md#axe_win_getProcessId)
+  * [\_\_AXE\_\_.win.getThreadId](jscall.md#axe_win_getThreadId)
+  * [\_\_AXE\_\_.win.getenv](jscall.md#axe_win_getenv)
+  * [\_\_AXE\_\_.win.setenv](jscall.md#axe_win_setenv)
+  * [\_\_AXE\_\_.win.addenv](jscall.md#axe_win_addenv)
   
 * [应用范例](example.md)
   * [获取bing每日壁纸并保存](examples/get_bing_bg.md)

@@ -123,8 +123,8 @@ doStart();
 ## <span id = "height">height</span>
 设置浏览器窗口的高度。参数值为一个整数，取值范围为 100 ~ 65535。
 
-## <span id = "dpi">dpi</span>
-打开 dpi 自动缩放功能，改善高分辨率下的显示。
+## <span id = "nodpi">nodpi</span>
+应用默认为开启 dpi 自动缩放以改善高分辨率下的显示。指定本参数则关闭 dpi 自动缩放功能。
 
 ## <span id = "help">help</span>
 显示简要帮助
