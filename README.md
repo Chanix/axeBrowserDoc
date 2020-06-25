@@ -41,3 +41,4 @@ axeBrowser 是免费软件，使用 MIT 协议。再次重申，对于本软件�
 
 ## 更多信息
 软件主页：http://www.axeBrowser.com
+Q 群: 422269945

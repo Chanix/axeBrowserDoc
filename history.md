@@ -1,9 +1,26 @@
 # 下载与历史
 
 ## 正在进行中的工作：
-- 重构 dll 与 控件 包装调用代码；
 - 升级 miniblink 和相关控件；
-- 处理调用 VLC 播放网络视频时出现的白屏问题；
+- 脚本文件的简单保护；
+
+## 2020/06/26
+- 各位端午节快乐！
+- 版本升级至 1.0.3；
+- 重构和整理代码；
+- 取消 VLC 支持库的分发；
+        axeBrowser 依然内置 VLC 支持，但不再分发支持库；
+        大部分场景不需要，完全支持必须再加上近百兆的库文件；
+        需要的用户请自行添加相应的库和支持文件；
+- 取消 Flash 支持库的分发；
+        axeBrowser 依然内置 Flash 支持，但不再分发支持库；
+        Adobe 于 2020/12/31 取消 Flash 的支持与维护；
+        需要的用户请自行添加相应的库和支持文件；
+- 修改完善内置网页内容；
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200626.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200626.zip) 
+
 
 ## 2020/06/18
 - 新增扩展：
