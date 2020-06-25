@@ -37,9 +37,6 @@
     - 打开前脚本入口    [preentrypoint](todo.md)
 - 优化 \_\_AXE\_\_.exec 的处理流程，原流程无必要的增加了脚本的控制难度；
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200618.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200618.zip) 
-
 ## 2020/06/08
 - 调整内嵌 miniblink 版本，提升健壮性；
         原 20.3.3 存在经常性崩溃（win10下），事件查看器中一直报 node.dll 错误。
@@ -53,9 +50,6 @@
     - [\_\_AXE\_\_.win.clip.read](jscall.md#axe_win_clip_read)
     - [\_\_AXE\_\_.win.clip.write](jscall.md#axe_win_clip_write)
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200608.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200608.zip) 
-
 ## 2020/06/01
 - 增加 VLC 支持（32位）；
 - 提升稳定运行时间，查找崩溃原因；
@@ -66,8 +60,6 @@
 - 修正浏览器网址输入框的显示错误；
 - 调整和美观窗体布局；
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200601.zip)
-
 ## 2020/05/25
 - 修正标题显示网址错误；
 - 增加 flash 支持（32位）；
@@ -76,8 +68,6 @@
 - 重构 dll 与 控件 包装调用代码；
 - 提升稳定运行时间（水平有限，导致未能无缝整合，程序运行一段时间后可能会随机崩溃出现）；
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200525.zip)
-
 ## 2020/05/21
 - 增加命令行参数 width，指定浏览器的宽度；
 - 增加命令行参数 height，指定浏览器的高度；
@@ -85,9 +75,5 @@
 - 提升稳定运行时间（由于个人水平问题，程序运行一段时间后，有发生崩溃的情况）；
 - 取消百度网盘提供下载；
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200521.zip)
-
 ## 2020/05/18
 - 彻底重新整理和编译，初始化版本。
-
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200518.zip)
