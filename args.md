@@ -14,7 +14,7 @@ axeBrowser 在不断的更新和完善中，因此命令行参数也会有修改
 指定自动首页网址，默认为 axeBrowser.com。完成初始化后，axeBrowser 会自动打开这个网址。
 
 ## <span id = "script">script</span>
-指定自动装载的 JavaScript 脚本或 JavaScript 脚本列表。（文件名之间以 "," 或 ";" 进行分隔。）默认为空。
+指定打开网址后执行的 JavaScript 脚本或 JavaScript 脚本列表。（文件名之间以 "," 或 ";" 进行分隔。）默认为空。
 打开首页后，axeBrowser 会按照先后顺序读取文件内容，并合并为一段代码在浏览器环境中的匿名函数中执行。
 
 程序会在每个 js 文件内容的末尾加上 “\n;\n”，避免问题。
@@ -59,7 +59,7 @@ __AXE__.log('this is js3.js');
 ```
 
 ## <span id = "entrypoint">entrypoint</span>
-指定自动调用的 JavaScript 入口函数的函数名，默认为空。该函数必须在 script 参数指明的脚本中被预先定义。入口函数不支持参数。
+指定 script 参数中欲调用的 JavaScript 入口函数的函数名，默认为空。该函数必须在 script 参数指明的脚本中被预先定义。入口函数不支持参数。
 
 举个例子：
 
@@ -91,6 +91,14 @@ function doStart() {
 doStart();
 
 ```
+
+
+## <span id = "prescript">prescript</span>
+指定打开网址前执行的 JavaScript 脚本或 JavaScript 脚本列表。
+
+## <span id = "preentrypoint">preentrypoint</span>
+指定打开网址前自动调用的 JavaScript 入口函数的函数名，默认为空。该函数必须在 prescript 参数指明的脚本中被预先定义。入口函数不支持参数。
+
 
 ## <span id = "referer">referer</span>
 指定浏览器访问首页时使用的来源地址（即 header 中的 referer），默认为空。

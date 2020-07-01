@@ -3,8 +3,18 @@
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
 - 脚本文件的简单保护；
-- 新增常用编码、加密算法，参见 [\_\_AXE\_\_.crypt](jscall.md#axe_crypt)；
+- 新增 demo 文件夹，存放一些例程以供参考；
+
+## 2020/07/01
 - 优化 app 运行模式下的窗体显示；
+- 整理和完善运行流程、运行模式；
+- 新增常用编码、加密算法，参见 [\_\_AXE\_\_.crypt](jscall.md#axe_crypt)；
+- 新增进程相关的扩展函数，参见 [\_\_AXE\_\_.process](jscall.md#axe_process)；
+
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200701.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200701.zip) 
+
 
 ## 2020/06/26
 - 各位端午节快乐！

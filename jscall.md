@@ -10,7 +10,7 @@ axeBrowser 为浏览器提供了扩展，可以在 JavaScript 代码中通过预
 
 例如：
 ```javascript
-if (__AXE__ == null) {
+if ('undefined' == typeof(__AXE__) || null == __AXE__) {
     alert('请检查：当前运行环境似乎不是 axeBrowser ？');
 } else {
     alert(__AXE__);
@@ -544,6 +544,7 @@ __AXE__.process.execWait('notepad');
 
 ---
 
+
 ## <span id = "axe_crypt_aes_encrypt">\_\_AXE\_\_.crypt.aes.encrypt</span>
 #### 定义和用法
 用 aes 算法进行加密。
@@ -735,9 +736,60 @@ __AXE__.crypt.base64.decodeUrl('aHR0cDovL2F4ZUJyb3dzZXIuY29t');
 ---
 
 
+## <span id = "axe_crypt_md2">\_\_AXE\_\_.crypt.md2</span>
+#### 定义和用法
+计算 MD2 值
+
+```javascript
+__AXE__.crypt.md2(content, upperCase, if16bit);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要计算摘要的字符串，默认为空字符串 ''。 |
+| upperCase  | 返回结果是否为大写，默认为 false，即返回小写的摘要。 |
+| if16bit  | 是否返回16位结果，默认为 false，即返回32位的结果。 |
+
+#### 返回值
+字符串，指定字符串的 MD2 值。
+
+#### 实例
+```javascript
+__AXE__.crypt.md2('contentToMD2');
+```
+
+---
+
+
+## <span id = "axe_crypt_md4">\_\_AXE\_\_.crypt.md4</span>
+#### 定义和用法
+计算 MD4 值
+
+```javascript
+__AXE__.crypt.md4(content, upperCase, if16bit);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要计算摘要的字符串，默认为空字符串 ''。 |
+| upperCase  | 返回结果是否为大写，默认为 false，即返回小写的摘要。 |
+| if16bit  | 是否返回16位结果，默认为 false，即返回32位的结果。 |
+
+#### 返回值
+字符串，指定字符串的 MD4 值。
+
+#### 实例
+```javascript
+__AXE__.crypt.md4('contentToMD4');
+```
+
+
+---
+
+
 ## <span id = "axe_crypt_md5">\_\_AXE\_\_.crypt.md5</span>
 #### 定义和用法
-计算 MD5 值 
+计算 MD5 值
 
 ```javascript
 __AXE__.crypt.md5(content, upperCase, if16bit);
@@ -756,6 +808,54 @@ __AXE__.crypt.md5(content, upperCase, if16bit);
 ```javascript
 __AXE__.crypt.md5('contentToMD5');
 ```
+
+---
+
+
+## <span id = "axe_crypt_rc4_encrypt">\_\_AXE\_\_.crypt.rc4.encrypt</span>
+#### 定义和用法
+用 rc4 算法进行加密。
+
+```javascript
+__AXE__.crypt.rc4.encrypt(content, key);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要进行加密的字符串 |
+| key | 密钥 |
+
+#### 返回值
+经过加密的密文。
+
+#### 实例
+```javascript
+__AXE__.crypt.rc4.encrypt('contentToRC4', 'secret');
+```
+
+---
+
+## <span id = "axe_crypt_rc4_decrypt">\_\_AXE\_\_.crypt.rc4.decrypt</span>
+#### 定义和用法
+用 rc4 算法进行解密
+
+```javascript
+__AXE__.crypt.rc4.decrypt(content, key);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要进行解密的字符串 |
+| key | 密钥 |
+
+#### 返回值
+经过解密的明文。
+
+#### 实例
+```javascript
+__AXE__.crypt.rc4.decrypt('contentToRC4', 'secret');
+```
+
 
 ---
 
