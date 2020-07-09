@@ -3,7 +3,17 @@
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
 - 脚本文件的简单保护；
-- 新增 demo 文件夹，存放一些例程以供参考；
+- 新增自定义热键，参见 [\_\_AXE\_\_.hotkey](jscall.md#axe_hotkey)；
+- 取消 CTRL+、CTRL-、CTRL0 对界面缩放的热键；
+        缩放有可能造成与开发者的意图相冲突；
+        界面应当由开发者来决定，不应画蛇添足；
+        可以通过扩展，在 JavaScript 中提供缩放功能；
+- 新增扩展：
+    - 设置首页网址      [\_\_AXE\_\_.axe_setHome](jscall.md#axe_setHome);
+    - 复制当前应用      [\_\_AXE\_\_.axe_clone](jscall.md#axe_clone)；
+    - 重启当前应用      [\_\_AXE\_\_.axe_restart](jscall.md#axe_restart)；
+- 优化代码逻辑，减小程序体积（3.2M）；
+
 
 ## 2020/07/01
 - 优化 app 运行模式下的窗体显示；

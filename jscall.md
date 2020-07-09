@@ -118,6 +118,54 @@ __AXE__.exit();
 
 ---
 
+## <span id = "axe_clone">\_\_AXE\_\_.clone</span>
+#### 定义和用法
+复制一个应用运行副本。以当前的工作目录、命令行参数再启动（克隆/复制）一个相同的实例。
+
+
+```javascript
+__AXE__.clone()
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| 无|  ||
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.clone();
+```
+
+---
+
+
+## <span id = "axe_restart">\_\_AXE\_\_.restart</span>
+#### 定义和用法
+重新启动当前应用。实际上，是先克隆（clone）一个新的副本，然后将原有的退出（exit）。
+
+
+```javascript
+__AXE__. restart()
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| 无|  ||
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.restart();
+```
+
+---
+
+
 ## <span id = "axe_exec">\_\_AXE\_\_.exec</span>
 #### 定义和用法
 **异步**调用外部程序，调用后将立即返回并执行后继代码。
@@ -193,7 +241,7 @@ alert(__AXE__.toString());
 
 ## <span id = "axe_setTitle">\_\_AXE\_\_.setTitle</span>
 #### 定义和用法
-设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。命令行窗口会附加“[console]”字样。如果使用的 axeBrowser 没有注册，则还会附加“【未注册】”字样。
+设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。命令行窗口会附加“[console]”字样。如果使用的 axeBrowser 没有捐助，则会附加“【免费版】”字样。
 
 ```javascript
 __AXE__.setTitle(title)
@@ -212,6 +260,30 @@ __AXE__.setTitle('这是由 JavaScript 设置的窗口标题');
 ```
 
 ---
+
+## <span id = "axe_setHome">\_\_AXE\_\_.setHome</span>
+#### 定义和用法
+设置要打开的首页网址。可以通过在 prescript 中调用本方法来动态设置要打开的首页网址。
+打开网址时，如果设置了则以设置为准，未设置以命令行参数 -home 为准，如果依然没有，则打开默认首页。
+
+```javascript
+__AXE__.setHome(url)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| url | 首页网址 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.setHome('axeBrowser.com');
+```
+
+---
+
 
 ## <span id = "axe_scrollPos">\_\_AXE\_\_.scrollPos</span>
 #### 定义和用法
@@ -688,12 +760,12 @@ __AXE__.crypt.base64.decodeHex('63 6f 6e 74 65 6e 74 54 6f 42 61 73 65 36 34');
 ---
 
 
-## <span id = "axe_crypt_base64_encodeUrlBase64">\_\_AXE\_\_.crypt.base64.encodeUrlBase64</span>
+## <span id = "axe_crypt_base64_encodeUrl">\_\_AXE\_\_.crypt.base64.encodeUrl</span>
 #### 定义和用法
 对网址字符串进行 base64 编码
 
 ```javascript
-__AXE__.crypt.base64.encodeUrlBase64(content);
+__AXE__.crypt.base64.encodeUrl(content);
 ```
 
 | 参数      | 描述 |
@@ -730,6 +802,53 @@ __AXE__.crypt.base64.decodeUrl(content);
 #### 实例
 ```javascript
 __AXE__.crypt.base64.decodeUrl('aHR0cDovL2F4ZUJyb3dzZXIuY29t');
+```
+
+
+---
+
+## <span id = "axe_crypt_des_encrypt">\_\_AXE\_\_.crypt.des.encrypt</span>
+#### 定义和用法
+用 des 算法进行加密。
+
+```javascript
+__AXE__.crypt.des.encrypt(content, key);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要进行加密的字符串 |
+| key | 密钥 |
+
+#### 返回值
+经过加密的密文。
+
+#### 实例
+```javascript
+__AXE__.crypt.des.encrypt('contentToDES', 'secret');
+```
+
+---
+
+## <span id = "axe_crypt_des_decrypt">\_\_AXE\_\_.crypt.des.decrypt</span>
+#### 定义和用法
+用 des 算法进行解密
+
+```javascript
+__AXE__.crypt.des.decrypt(content, key);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| content  | 要进行解密的字符串 |
+| key | 密钥 |
+
+#### 返回值
+经过解密的明文。
+
+#### 实例
+```javascript
+__AXE__.crypt.des.decrypt('contentToDES', 'secret');
 ```
 
 
@@ -967,7 +1086,7 @@ __AXE__.crypt.zlib.gzCompress(content, level);
 | 参数      | 描述 |
 | :---      | :--- |
 | content  | 要压缩的字符串 |
-| level  | 压缩级别（从1到9）。1最快，9压缩比最大，默认为 9。 |
+| level  | 压缩级别（从1到9）。1最快，9压缩比最大，默认为 8。 |
 
 #### 返回值
 经过压缩后的字符串
@@ -1003,5 +1122,104 @@ __AXE__.crypt.zlib.gzUncompress('contentGzip');
 
 ---
 
+## <span id = "axe_hotkey">\_\_AXE\_\_.hotkey</span>
+通过本模块在 Javascript 中自定义热键和按下热键时要执行的脚本代码，脚本代码在匿名函数中运行。
+由于实际环境不同，因此设置热键不一定成功。
 
+热键名称请这样来定义【控制键+按键名称】，例如 “CTRL+C”，“ALT+F1” 等。如果不需要控制键则留空，例如 “+F1” 代表 F1 功能键单独按下。热键名称不区分大小写，建议根据自己的习惯来统一。
+
+
+---
+
+
+## <span id = "axe_hotkey_set">\_\_AXE\_\_.hotkey.set</span>
+#### 定义和用法
+定义某热键执行的脚本代码。
+
+```javascript
+__AXE__.hotkey.set(key_name, script_code);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| key_name  | 热键的名称 |
+| script_code | 执行的代码 |
+
+#### 返回值
+true    热键设置成功
+false   热键设置失败
+
+#### 实例
+```javascript
+__AXE__.hotkey.set('ctrl+s', `alert('CTRL+S 被按下');`);
+```
+
+---
+
+
+## <span id = "axe_hotkey_unset">\_\_AXE\_\_.hotkey.unset</span>
+#### 定义和用法
+取消指定热键定义。
+
+```javascript
+__AXE__.hotkey.unset(key_name);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| key_name  | 热键的名称 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.hotkey.unset('ctrl+s');
+```
+
+
+---
+
+
+## <span id = "axe_hotkey_isset">\_\_AXE\_\_.hotkey.isset</span>
+#### 定义和用法
+检查指定的热键是否已经定义
+
+```javascript
+__AXE__.hotkey.isset(key_name);
+```
+
+| 参数      | 描述 |
+| :---      | :--- |
+| key_name  | 热键的名称 |
+
+#### 返回值
+true    已设置
+false   未设置
+
+#### 实例
+```javascript
+__AXE__.hotkey.isset('ctrl+s');
+```
+
+---
+
+
+## <span id = "axe_hotkey_clear">\_\_AXE\_\_.hotkey.clear</span>
+#### 定义和用法
+取消所有热键。
+
+```javascript
+__AXE__.hotkey.clear();
+```
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.hotkey.clear();
+```
+
+---
 
