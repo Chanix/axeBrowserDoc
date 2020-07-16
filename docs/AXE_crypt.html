@@ -1,0 +1,1930 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>__AXE__.crypt    （编码解码） · axeBrowser 使用手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="http://axeBrowser.com">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="AXE_crypt.html" />
+    
+    
+    <link rel="prev" href="AXE_core.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介与说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    下载与历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="how_to_run.html">
+            
+                <a href="how_to_run.html">
+            
+                    
+                    运行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="args.html">
+            
+                <a href="args.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="args.html">
+            
+                <a href="args.html#nodpi">
+            
+                    
+                    nodpi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="args.html">
+            
+                <a href="args.html#entrypoint">
+            
+                    
+                    entrypoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="args.html">
+            
+                <a href="args.html#preentrypoint">
+            
+                    
+                    preentrypoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="args.html">
+            
+                <a href="args.html#help">
+            
+                    
+                    help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="args.html">
+            
+                <a href="args.html#home">
+            
+                    
+                    home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="args.html">
+            
+                <a href="args.html#proxy">
+            
+                    
+                    proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="args.html">
+            
+                <a href="args.html#referer">
+            
+                    
+                    referer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="args.html">
+            
+                <a href="args.html#runas">
+            
+                    
+                    runas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="args.html">
+            
+                <a href="args.html#script">
+            
+                    
+                    script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="args.html">
+            
+                <a href="args.html#prescript">
+            
+                    
+                    prescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="args.html">
+            
+                <a href="args.html#timeout">
+            
+                    
+                    timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.12.1" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    waitdoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.2" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.12.2.1" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.2.2" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    wait_timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.3" data-path="args.html">
+            
+                <a href="args.html#wait_mode">
+            
+                    
+                    nowait
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="args.html">
+            
+                <a href="args.html#useragent">
+            
+                    
+                    useragent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="js_native_api.html">
+            
+                <a href="js_native_api.html">
+            
+                    
+                    JavaScript 扩展（Native API）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_clone">
+            
+                    
+                    __AXE__.clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_exit">
+            
+                    
+                    __AXE__.exit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_getArgv">
+            
+                    
+                    __AXE__.getArgv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_log">
+            
+                    
+                    __AXE__.log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_restart">
+            
+                    
+                    __AXE__.restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_setHome">
+            
+                    
+                    __AXE__.setHome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_setScripts">
+            
+                    
+                    __AXE__.setScripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_setEntryPoint">
+            
+                    
+                    __AXE__.setEntryPoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_setTimeout">
+            
+                    
+                    __AXE__.setTimeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_toString">
+            
+                    
+                    __AXE__.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt">
+            
+                    
+                    __AXE__.crypt    （编码解码）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.11.1" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_aes_encrypt">
+            
+                    
+                    __AXE__.crypt.aes.encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.2" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_aes_decrypt">
+            
+                    
+                    __AXE__.crypt.aes.decrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.3" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_encode">
+            
+                    
+                    __AXE__.crypt.base64.encode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.4" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_decode">
+            
+                    
+                    __AXE__.crypt.base64.decode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.5" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_encodeHex">
+            
+                    
+                    __AXE__.crypt.base64.encodeHex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.6" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_decodeHex">
+            
+                    
+                    __AXE__.crypt.base64.decodeHex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.7" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_encodeUrl">
+            
+                    
+                    __AXE__.crypt.base64.encodeUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.8" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_base64_decodeUrl">
+            
+                    
+                    __AXE__.crypt.base64.decodeUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.9" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_des_encrypt">
+            
+                    
+                    __AXE__.crypt.des.encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.10" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_des_decrypt">
+            
+                    
+                    __AXE__.crypt.des.decrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.11" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_md2">
+            
+                    
+                    __AXE__.crypt.md2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.12" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_md4">
+            
+                    
+                    __AXE__.crypt.md4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.13" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_md5">
+            
+                    
+                    __AXE__.crypt.md5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.14" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_rc4_encrypt">
+            
+                    
+                    __AXE__.crypt.rc4.encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.15" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_rc4_decrypt">
+            
+                    
+                    __AXE__.crypt.rc4.decrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.16" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_sha1">
+            
+                    
+                    __AXE__.crypt.sha1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.17" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_sha256">
+            
+                    
+                    __AXE__.crypt.sha256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.18" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_sha384">
+            
+                    
+                    __AXE__.crypt.sha384
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.19" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_sha512">
+            
+                    
+                    __AXE__.crypt.sha512
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.20" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_zlib_gzCompress">
+            
+                    
+                    __AXE__.crypt.zlib.gzCompress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11.21" data-path="AXE_crypt.html">
+            
+                <a href="AXE_crypt.html#axe_crypt_zlib_gzUncompress">
+            
+                    
+                    __AXE__.crypt.zlib.gzUncompress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_file">
+            
+                    
+                    __AXE__.file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_file_readString">
+            
+                    
+                    __AXE__.file.readString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="jscall.html">
+            
+                <a href="jscall.html#axe_file_writeString">
+            
+                    
+                    __AXE__.file.writeString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="AXE_hotkey.html">
+            
+                <a href="AXE_hotkey.html#axe_hotkey">
+            
+                    
+                    __AXE__.hotkey  （应用热键）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.15.1" data-path="AXE_hotkey.html">
+            
+                <a href="AXE_hotkey.html#axe_hotkey_set">
+            
+                    
+                    __AXE__.hotkey.set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15.2" data-path="AXE_hotkey.html">
+            
+                <a href="AXE_hotkey.html#axe_hotkey_unset">
+            
+                    
+                    __AXE__.hotkey.unset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15.3" data-path="AXE_hotkey.html">
+            
+                <a href="AXE_hotkey.html#axe_hotkey_clear">
+            
+                    
+                    __AXE__.hotkey.clear
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_setTitle">
+            
+                    
+                    __AXE__.setTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_scrollPos">
+            
+                    
+                    __AXE__.scrollPos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_clip_read">
+            
+                    
+                    __AXE__.win.clip.read
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_clip_write">
+            
+                    
+                    __AXE__.win.clip.write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_getProcessId">
+            
+                    
+                    __AXE__.win.getProcessId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_getThreadId">
+            
+                    
+                    __AXE__.win.getThreadId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_getenv">
+            
+                    
+                    __AXE__.win.getenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.23" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_setenv">
+            
+                    
+                    __AXE__.win.setenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.24" data-path="AXE_core.html">
+            
+                <a href="AXE_core.html#axe_win_addenv">
+            
+                    
+                    __AXE__.win.addenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.25" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html">
+            
+                    
+                    __AXE__.fsys     （文件系统）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html">
+            
+                    
+                    __AXE__.process  （进程相关）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.26.1" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html#axe_process">
+            
+                    
+                    __AXE__.process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26.2" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html#axe_process_execAXE">
+            
+                    
+                    __AXE__.process.execAXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26.3" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html#axe_process_execAXEWait">
+            
+                    
+                    __AXE__.process.execAXEWait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26.4" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html#axe_process_exec">
+            
+                    
+                    __AXE__.process.exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26.5" data-path="AXE_process.html">
+            
+                <a href="AXE_process.html#axe_process_execWait">
+            
+                    
+                    __AXE__.process.execWait
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="example.html">
+            
+                <a href="example.html">
+            
+                    
+                    应用范例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="examples/get_bing_bg.html">
+            
+                <a href="examples/get_bing_bg.html">
+            
+                    
+                    获取bing每日壁纸并保存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    常见问题与解答
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >__AXE__.crypt    （编码解码）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="axecrypt"><span id="axe_crypt">__AXE__.crypt</span></h1>
+<p>&#x6240;&#x6709;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;</p>
+<hr>
+<h2 id="axecryptaesencrypt"><span id="axe_crypt_aes_encrypt">__AXE__.crypt.aes.encrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; aes &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.aes.encrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x52A0;&#x5BC6;&#x7684;&#x5BC6;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.aes.encrypt(<span class="hljs-string">&apos;contentToAES&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptaesdecrypt"><span id="axe_crypt_aes_decrypt">__AXE__.crypt.aes.decrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; aes &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.aes.decrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x5BC6;&#x7684;&#x660E;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.aes.decrypt(<span class="hljs-string">&apos;contentToAES&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64encode"><span id="axe_crypt_base64_encode">__AXE__.crypt.base64.encode</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C; base64 &#x7F16;&#x7801;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encode(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encode(<span class="hljs-string">&apos;contentToBase64&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64decode"><span id="axe_crypt_base64_decode">__AXE__.crypt.base64.decode</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C; base64 &#x89E3;&#x7801;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decode(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x89E3;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decode(<span class="hljs-string">&apos;Y29udGVudFRvQmFzZTY0&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64encodehex"><span id="axe_crypt_base64_encodeHex">__AXE__.crypt.base64.encodeHex</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C; base64 &#x7F16;&#x7801;&#xFF0C;&#x8FD4;&#x56DE;16&#x8FDB;&#x5236;&#x7F16;&#x7801;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encodeHex(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encodeHex(<span class="hljs-string">&apos;contentToBase64&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64decodehex"><span id="axe_crypt_base64_decodeHex">__AXE__.crypt.base64.decodeHex</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;16&#x8FDB;&#x5236;&#x7F16;&#x7801;&#x8FDB;&#x884C;&#x89E3;&#x7801;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decodeHex(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x89E3;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decodeHex(<span class="hljs-string">&apos;63 6f 6e 74 65 6e 74 54 6f 42 61 73 65 36 34&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64encodeurl"><span id="axe_crypt_base64_encodeUrl">__AXE__.crypt.base64.encodeUrl</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;&#x7F51;&#x5740;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C; base64 &#x7F16;&#x7801;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encodeUrl(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.encodeUrl(<span class="hljs-string">&apos;http://axeBrowser.com&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptbase64decodeurl"><span id="axe_crypt_base64_decodeUrl">__AXE__.crypt.base64.decodeUrl</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5BF9;&#x8FDB;&#x884C;&#x8FC7;&#x7F16;&#x7801;&#x7684;&#x7F51;&#x5740;&#x8FDB;&#x884C;&#x89E3;&#x7801;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decodeUrl(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x89E3;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x7801;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.base64.decodeUrl(<span class="hljs-string">&apos;aHR0cDovL2F4ZUJyb3dzZXIuY29t&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptdesencrypt"><span id="axe_crypt_des_encrypt">__AXE__.crypt.des.encrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; des &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.des.encrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x52A0;&#x5BC6;&#x7684;&#x5BC6;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.des.encrypt(<span class="hljs-string">&apos;contentToDES&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptdesdecrypt"><span id="axe_crypt_des_decrypt">__AXE__.crypt.des.decrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; des &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.des.decrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x5BC6;&#x7684;&#x660E;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.des.decrypt(<span class="hljs-string">&apos;contentToDES&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptmd2"><span id="axe_crypt_md2">__AXE__.crypt.md2</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; MD2 &#x503C;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.md2(content, upperCase, if16bit);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &apos;&apos;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;&#x5C0F;&#x5199;&#x7684;&#x6458;&#x8981;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">if16bit</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x8FD4;&#x56DE;16&#x4F4D;&#x7ED3;&#x679C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;32&#x4F4D;&#x7684;&#x7ED3;&#x679C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; MD2 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.md2(<span class="hljs-string">&apos;contentToMD2&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptmd4"><span id="axe_crypt_md4">__AXE__.crypt.md4</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; MD4 &#x503C;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.md4(content, upperCase, if16bit);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &apos;&apos;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;&#x5C0F;&#x5199;&#x7684;&#x6458;&#x8981;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">if16bit</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x8FD4;&#x56DE;16&#x4F4D;&#x7ED3;&#x679C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;32&#x4F4D;&#x7684;&#x7ED3;&#x679C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; MD4 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.md4(<span class="hljs-string">&apos;contentToMD4&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptmd5"><span id="axe_crypt_md5">__AXE__.crypt.md5</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; MD5 &#x503C;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.md5(content, upperCase, if16bit);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &apos;&apos;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;&#x5C0F;&#x5199;&#x7684;&#x6458;&#x8981;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">if16bit</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x8FD4;&#x56DE;16&#x4F4D;&#x7ED3;&#x679C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x5373;&#x8FD4;&#x56DE;32&#x4F4D;&#x7684;&#x7ED3;&#x679C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; MD5 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.md5(<span class="hljs-string">&apos;contentToMD5&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptrc4encrypt"><span id="axe_crypt_rc4_encrypt">__AXE__.crypt.rc4.encrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; rc4 &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.rc4.encrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x52A0;&#x5BC6;&#x7684;&#x5BC6;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.rc4.encrypt(<span class="hljs-string">&apos;contentToRC4&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptrc4decrypt"><span id="axe_crypt_rc4_decrypt">__AXE__.crypt.rc4.decrypt</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x7528; rc4 &#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.rc4.decrypt(content, key);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">&#x5BC6;&#x94A5;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x5BC6;&#x7684;&#x660E;&#x6587;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.rc4.decrypt(<span class="hljs-string">&apos;contentToRC4&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptsha1"><span id="axe_crypt_sha1">__AXE__.crypt.sha1</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; sha1 &#x503C; </p>
+<pre><code class="lang-javascript">__AXE__.crypt.sha1(content, upperCase);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF0C;&#x5373;&#x5927;&#x5199;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; sha1 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.sha1(<span class="hljs-string">&apos;contentToSha1&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptsha256"><span id="axe_crypt_sha256">__AXE__.crypt.sha256</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; sha256 &#x503C; </p>
+<pre><code class="lang-javascript">__AXE__.crypt.sha1(content, upperCase);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF0C;&#x5373;&#x5927;&#x5199;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; sha256 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.sha256(<span class="hljs-string">&apos;contentToSha256&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptsha384"><span id="axe_crypt_sha384">__AXE__.crypt.sha384</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; sha384 &#x503C; </p>
+<pre><code class="lang-javascript">__AXE__.crypt.sha384(content, upperCase);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF0C;&#x5373;&#x5927;&#x5199;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; sha384 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.sha384(<span class="hljs-string">&apos;contentToSha384&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptsha512"><span id="axe_crypt_sha512">__AXE__.crypt.sha512</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BA1;&#x7B97; sha512 &#x503C; </p>
+<pre><code class="lang-javascript">__AXE__.crypt.sha512(content, upperCase);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x8BA1;&#x7B97;&#x6458;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">upperCase</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF0C;&#x5373;&#x5927;&#x5199;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684; sha512 &#x503C;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.sha512(<span class="hljs-string">&apos;contentToSha512&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptzlibgzcompress"><span id="axe_crypt_zlib_gzCompress">__AXE__.crypt.zlib.gzCompress</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x4F7F;&#x7528; gzip &#x7B97;&#x6CD5;&#x538B;&#x7F29;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.zlib.gzCompress(content, level);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x538B;&#x7F29;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">level</td>
+<td style="text-align:left">&#x538B;&#x7F29;&#x7EA7;&#x522B;&#xFF08;&#x4ECE;1&#x5230;9&#xFF09;&#x3002;1&#x6700;&#x5FEB;&#xFF0C;9&#x538B;&#x7F29;&#x6BD4;&#x6700;&#x5927;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 8&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x538B;&#x7F29;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.zlib.gzCompress(<span class="hljs-string">&apos;contentGzip&apos;</span>);
+__AXE__.crypt.zlib.gzCompress(<span class="hljs-string">&apos;contentGzip&apos;</span>, <span class="hljs-number">1</span>);
+</code></pre>
+<hr>
+<h2 id="axecryptzlibgzuncompress"><span id="axe_crypt_zlib_gzUncompress">__AXE__.crypt.zlib.gzUncompress</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x4F7F;&#x7528; gzip &#x7B97;&#x6CD5;&#x89E3;&#x538B;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code class="lang-javascript">__AXE__.crypt.zlib.gzUncompress(content);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x8981;&#x89E3;&#x538B;&#x7684;&#x5185;&#x5BB9;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x7ECF;&#x8FC7;&#x89E3;&#x538B;&#x540E;&#x7684;&#x5185;&#x5BB9;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.crypt.zlib.gzUncompress(<span class="hljs-string">&apos;contentGzip&apos;</span>);
+</code></pre>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="AXE_core.html#axe_toString" class="navigation navigation-prev " aria-label="Previous page: __AXE__.toString">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="AXE_crypt.html#axe_crypt_aes_encrypt" class="navigation navigation-next " aria-label="Next page: __AXE__.crypt.aes.encrypt">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"__AXE__.crypt    （编码解码）","level":"1.5.11","depth":2,"next":{"title":"__AXE__.crypt.aes.encrypt","level":"1.5.11.1","depth":3,"anchor":"#axe_crypt_aes_encrypt","path":"AXE_crypt.md","ref":"AXE_crypt.md#axe_crypt_aes_encrypt","articles":[]},"previous":{"title":"__AXE__.toString","level":"1.5.10","depth":2,"anchor":"#axe_toString","path":"AXE_core.md","ref":"AXE_core.md#axe_toString","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","expandable-chapters","splitter","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"expandable-chapters":{},"splitter":{},"back-to-top-button":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"http://axeBrowser.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"axeBrowser 使用手册","language":"zh-hans","gitbook":"*"},"file":{"path":"AXE_crypt.md","mtime":"2020-07-16T03:00:44.410Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-16T03:53:44.185Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

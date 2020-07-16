@@ -13,6 +13,7 @@
     - 复制当前应用      [\_\_AXE\_\_.axe_clone](jscall.md#axe_clone)；
     - 重启当前应用      [\_\_AXE\_\_.axe_restart](jscall.md#axe_restart)；
 - 优化代码逻辑，减小程序体积（3.2M）；
+- 移除 window.external.axe；
 
 
 ## 2020/07/01

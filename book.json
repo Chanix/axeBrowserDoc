@@ -5,9 +5,8 @@
     "plugins": [
         "-lunr",
         "-search",
-        "chapter-fold",
-        "expandable-chapters",
         "search-pro",
+        "expandable-chapters",
         "splitter",
         "back-to-top-button"
     ]

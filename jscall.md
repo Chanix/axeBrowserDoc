@@ -1,5 +1,18 @@
 # JavaScript 扩展
-axeBrowser 在不断的更新和完善中，因此内置的扩展也会有修改和增减。在进行修改和增减时，会尽量的保持兼容性，使原有的脚本无需进行修改。请随时关注最新的文档说明。
+axeBrowser 为浏览器提供了大量的扩展（Native API），可以在 JavaScript 代码中通过预设变量 “\_\_AXE\_\_” 获得，并通过其进行功能扩展。
+
+这个变量是否存在可以作为当前是否 axeBrowser 环境的判断依据，VIP 版可以修改该预设变量的变量名。
+
+例如：
+```javascript
+if ('undefined' == typeof(__AXE__) || null == __AXE__) {
+    alert('请检查：当前运行环境似乎不是 axeBrowser ？');
+} else {
+    alert(__AXE__);
+}
+```
+
+**axeBrowser 在不断的更新和完善中，因此扩展也会有修改和增减。在进行修改和增减时，会尽量的保持兼容性，使原有的脚本无需进行修改。请随时关注最新的文档说明。**
 
 ---
 
@@ -568,7 +581,15 @@ __AXE__.process.execAXEWait(__AXE__.getArgv());
 #### 定义和用法
 **异步**调用，执行指定的文件。
 该执行文件的工作目录为 axeBrowser.exe 所在的文件夹。
-通过 args 来传递调用时的命令行参数，默认为空字符串''。
+通过 args 来传递调用时的命令行参/C timeout /t 30');
+__AXE__.process.exec('notepad');
+```
+
+#### 提示
+请注意通过 args 传递命令行参数时的特殊字符处理，例如通过双引号包括参数值。
+
+
+---数，默认为空字符串''。
 
 ```javascript
 __AXE__.process.exec(file, args);
@@ -578,15 +599,7 @@ __AXE__.process.exec(file, args);
 
 #### 实例
 ```javascript
-__AXE__.process.exec('cmd', '/C timeout /t 30');
-__AXE__.process.exec('notepad');
-```
-
-#### 提示
-请注意通过 args 传递命令行参数时的特殊字符处理，例如通过双引号包括参数值。
-
-
----
+__AXE__.process.exec('cmd', '
 
 ## <span id = "axe_process_execWait">\_\_AXE\_\_.process.execWait</span>
 #### 定义和用法
