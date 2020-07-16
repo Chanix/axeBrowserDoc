@@ -270,127 +270,10 @@ alert(__AXE__.toString());
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
 ## <span id = "axe_setTitle">\_\_AXE\_\_.setTitle</span>
 #### 定义和用法
-设置窗口标题，包括浏览器窗口标题和命令行终端窗口标题。命令行窗口会附加“[console]”字样。如果使用的 axeBrowser 没有捐助，则会附加“【免费版】”字样。
+设置窗口标题，包括浏览器窗口标题和命令行窗口标题，非 VIP 版会附加“【免费版】”字样。
+请注意，如果当前没有打开命令行窗口，那么不会设置命令行窗口的标题。
 
 ```javascript
 __AXE__.setTitle(title)
@@ -408,7 +291,176 @@ __AXE__.setTitle(title)
 __AXE__.setTitle('这是由 JavaScript 设置的窗口标题');
 ```
 
+
 ---
+
+
+## <span id = "axe_getHeight">\_\_AXE\_\_.getHeight</span>
+#### 定义和用法
+获取主窗口高度
+
+```javascript
+__AXE__.getHeight()
+```
+
+#### 返回值
+主窗口高度
+
+#### 实例
+```javascript
+__AXE__.getHeight();
+```
+
+---
+
+
+## <span id = "axe_setHeight">\_\_AXE\_\_.setHeight</span>
+#### 定义和用法
+设置主窗口高度
+
+```javascript
+__AXE__.setHeight(height)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| height | 主窗口高度 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.setHeight(600);
+```
+
+
+---
+
+
+## <span id = "axe_getWidth">\_\_AXE\_\_.getWidth</span>
+#### 定义和用法
+获取主窗口宽度
+
+```javascript
+__AXE__.getWidth()
+```
+
+#### 返回值
+主窗口宽度
+
+#### 实例
+```javascript
+__AXE__.getWidth();
+```
+
+---
+
+
+## <span id = "axe_setWidth">\_\_AXE\_\_.setWidth</span>
+#### 定义和用法
+设置主窗口宽度
+
+```javascript
+__AXE__.setWidth(width)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| width | 主窗口宽度 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.setWidth(800);
+```
+
+
+---
+
+
+## <span id = "axe_isFullScreen">\_\_AXE\_\_.isFullScreen</span>
+#### 定义和用法
+当前主窗口是否为全屏显示状态。
+
+```javascript
+__AXE__.isFullScreen
+```
+
+#### 返回值
+true 全屏，false 非全屏
+
+#### 实例
+```javascript
+if (__AXE__.isFullScreen) { alert('当前为全屏显示状态'); };
+```
+
+
+---
+
+
+## <span id = "axe_setFullScreen">\_\_AXE\_\_.setFullScreen</span>
+#### 定义和用法
+设置主窗口全屏显示，参数为 true 设置为全屏显示，false 取消全屏显示。可以通过 isFullScreen 来获取当前的显示状态。
+
+注意，窗口必须显示才可以进行全屏设置，如果窗口处于最小化状态，调用无效。
+
+```javascript
+__AXE__.setFullScreen(fullscreen)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| fullscreen | 是否全屏 |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.setFullScreen(true);
+__AXE__.setFullScreen(false);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 
 
 
@@ -689,50 +741,5 @@ __AXE__.process.execAXEWait(__AXE__.getArgv());
 
 
 ---
-
-
-## <span id = "axe_process_exec">\_\_AXE\_\_.process.exec</span>
-#### 定义和用法
-**异步**调用，执行指定的文件。
-该执行文件的工作目录为 axeBrowser.exe 所在的文件夹。
-通过 args 来传递调用时的命令行参/C timeout /t 30');
-__AXE__.process.exec('notepad');
-```
-
-#### 提示
-请注意通过 args 传递命令行参数时的特殊字符处理，例如通过双引号包括参数值。
-
-
----数，默认为空字符串''。
-
-```javascript
-__AXE__.process.exec(file, args);
-```
-#### 返回值
-调用成功返回 true，其他返回 false。
-
-#### 实例
-```javascript
-__AXE__.process.exec('cmd', '
-
-## <span id = "axe_process_execWait">\_\_AXE\_\_.process.execWait</span>
-#### 定义和用法
-**同步**调用，执行指定的文件，当前应用将等待至该调用执行完毕后方才继续。
-该执行文件的工作目录为 axeBrowser.exe 所在的文件夹。
-通过 args 来传递调用时的命令行参数，默认为空字符串''。
-
-```javascript
-__AXE__.process.execWait(file, args);
-```
-#### 返回值
-调用成功返回 true，其他返回 false。
-
-#### 实例
-```javascript
-__AXE__.process.execWait('cmd', '/C timeout /t 30');
-__AXE__.process.execWait('notepad');
-```
-#### 提示
-请注意通过 args 传递命令行参数时的特殊字符处理，例如通过双引号包括参数值。
 
 
