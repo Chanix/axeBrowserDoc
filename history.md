@@ -2,16 +2,22 @@
 
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
+- 版本升级至 1.0.4；
 - 脚本文件的简单保护；
-- 新增自定义热键，参见 [\_\_AXE\_\_.hotkey](jscall.md#axe_hotkey)；
 - 取消 CTRL+、CTRL-、CTRL0 对界面缩放的热键；
         缩放有可能造成与开发者的意图相冲突；
         界面应当由开发者来决定，不应画蛇添足；
         可以通过扩展，在 JavaScript 中提供缩放功能；
-- 新增扩展：
-    - 设置首页网址      [\_\_AXE\_\_.axe_setHome](jscall.md#axe_setHome);
-    - 复制当前应用      [\_\_AXE\_\_.axe_clone](jscall.md#axe_clone)；
-    - 重启当前应用      [\_\_AXE\_\_.axe_restart](jscall.md#axe_restart)；
+- 修正内部网页资源的引用错误；
+- 完善并整理文档；
+- 新增与调整扩展（此版本变化较大，请以最新文档为准）：
+    - 基础扩展          [\_\_AXE\_\_](AXE_core.md#axe)；
+    - 自定义热键        [\_\_AXE\_\_.hotkey](AXE_hotkey.md#axe_hotkey)；
+    - 环境变量          [\_\_AXE\_\_.env](AXE_clipboard.md#axe_env)
+    - 剪贴板            [\_\_AXE\_\_.clipboard](AXE_clipboard.md#axe_clipboard)
+    - 进程相关          [\_\_AXE\_\_.process](AXE_process.md#axe_process)
+    - 编码解码          [\_\_AXE\_\_.crypt](AXE_process.md#axe_crypt)
+    - 文件系统          [\_\_AXE\_\_.fsys](AXE_fsys.md#axe_fsys)
 - 优化代码逻辑，减小程序体积（3.2M）；
 - 移除 window.external.axe；
 
@@ -19,8 +25,8 @@
 ## 2020/07/01
 - 优化 app 运行模式下的窗体显示；
 - 整理和完善运行流程、运行模式；
-- 新增常用编码、加密算法，参见 [\_\_AXE\_\_.crypt](jscall.md#axe_crypt)；
-- 新增进程相关的扩展函数，参见 [\_\_AXE\_\_.process](jscall.md#axe_process)；
+- 新增常用编码、加密算法，参见 [\_\_AXE\_\_.crypt](AXE_crypt.md#axe_crypt)；
+- 新增进程相关的扩展函数，参见 [\_\_AXE\_\_.process](AXE_process.md#axe_process)；
 
 
 [GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200701.zip) | 
@@ -40,9 +46,6 @@
         Adobe 于 2020/12/31 取消 Flash 的支持与维护；
         需要的用户请自行添加相应的库和支持文件；
 - 修改完善内置网页内容；
-
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200626.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200626.zip) 
 
 
 ## 2020/06/18

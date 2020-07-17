@@ -413,7 +413,7 @@ __AXE__.setFullScreen(fullscreen)
 
 | 参数  | 描述 |
 | :---  | :--- |
-| fullscreen | 是否全屏 |
+| fullscreen | 是否全屏，默认为 true |
 
 #### 返回值
 无
@@ -421,9 +421,40 @@ __AXE__.setFullScreen(fullscreen)
 #### 实例
 ```javascript
 __AXE__.setFullScreen(true);
+__AXE__.isFullScreen;
 __AXE__.setFullScreen(false);
+__AXE__.isFullScreen;
 ```
 
+
+---
+
+
+## <span id = "axe_setDpi">\_\_AXE\_\_.setDpi</span>
+#### 定义和用法
+设置主窗口启用 dpi 缩放，设置为启动将遵从操作系统的分辨率，适用于高分辨率屏幕。
+参数为 true 启动，false 关闭。
+
+注意，窗口必须显示才可以进行全屏设置，如果窗口处于最小化状态，调用无效。
+
+```javascript
+__AXE__.setDpi(dpi)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| dpi | 是否启动缩放，默认为 true |
+
+#### 返回值
+无
+
+#### 实例
+```javascript
+__AXE__.setDpi(true);
+```
+
+
+---
 
 
 
