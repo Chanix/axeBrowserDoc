@@ -72,11 +72,13 @@ __AXE__.dlg.openFileEx(fileType, title, dir)
 __AXE__.dlg.openFileEx('所有文件|*.*|文本文件|*.txt|JavaScript|*.js', '请选择文件');
 ```
 
+
 ---
+
 
 ## <span id = "axe_dlg_saveFile">\_\_AXE\_\_.dlg.saveFile</span>
 #### 定义和用法
-打开文件保存对话框，返回选取的文件名。
+文件保存对话框，返回选取的文件名。
 如果没有选择（退出）则返回 null。
 
 ```javascript
@@ -98,8 +100,61 @@ __AXE__.dlg.saveFile(fileType, title, filename)
 __AXE__.dlg.saveFile('所有文件|*.*|文本文件|*.txt|JavaScript|*.js', '请选择文件');
 ```
 
+
 ---
 
 
-	openDir		= function(dir, subTitle, title)
-	openDirEx	= function(dir, title, label, if_multi = false)
+
+
+## <span id = "axe_dlg_openDir">\_\_AXE\_\_.dlg.openDir</span>
+#### 定义和用法
+打开文件夹选择框，返回选取的文件夹名称。
+如果没有选择（退出）则返回 null。
+
+```javascript
+__AXE__.dlg.openDir(dir, title, label)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| dir | 文件夹名称 |
+| title | 窗口标题 |
+| label | 标题 |
+
+#### 返回值
+取消 null
+否则返回选取的文件夹名称。
+
+#### 实例
+```javascript
+__AXE__.dlg.openDir();
+```
+
+
+---
+
+
+## <span id = "axe_dlg_openDirEx">\_\_AXE\_\_.dlg.openDirEx</span>
+#### 定义和用法
+打开文件夹选择框，返回选取的文件夹名称，支持多选。
+如果没有选择（退出）则返回 null。
+
+```javascript
+__AXE__.dlg.openDirEx(dir, title, label, multi)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| dir | 文件夹名称 |
+| title | 窗口标题 |
+| label | 标题 |
+| multi | 是否多选 |
+
+#### 返回值
+取消 null
+否则返回选取的文件夹名称数组。
+
+#### 实例
+```javascript
+__AXE__.dlg.openDirEx();
+```
