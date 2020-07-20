@@ -25,6 +25,7 @@
 * [JavaScript 扩展（Native API）](js_native_api.md)
   * [\_\_AXE\_\_  （基础扩展）](AXE_core.md#axe)
     * [\_\_AXE\_\_.clone](AXE_core.md#axe_clone)
+    * [\_\_AXE\_\_.colorlog](AXE_core.md#axe_colorlog)
     * [\_\_AXE\_\_.exit](AXE_core.md#axe_exit)
     * [\_\_AXE\_\_.getArgv](AXE_core.md#axe_getArgv)
     * [\_\_AXE\_\_.getHeight](AXE_core.md#axe_getHeight)

@@ -124,7 +124,34 @@ This is a string
 String  12345   null    9       true
 ```
 
+
 ---
+
+
+## <span id = "axe_colorlog">\_\_AXE\_\_.colorlog</span>
+#### 定义和用法
+用自定义前景色和背景色在命令行窗口中显示日志。
+
+
+```javascript
+__AXE__.colorlog(text_color, back_color, p1, p2, p3 ...)
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| text_color | 前景色 |
+| back_color | 背景色 |
+| p1, p2, p3 ... | 要显示的内容，可以为变量或者表达式 |
+
+前景色和背景色，请使用 \_\_AXE\_\_.const 中以 \_CONSOLE\_COLOR\_ 开头的常量，例如：\_\_AXE\_\_.const.\_CONSOLE\_COLOR\_RED。
+
+背景色可以为 null，使用当前的背景色。
+
+除了可指定颜色，其他和 log 一致，不再赘述。
+
+
+---
+
 
 ## <span id = "axe_setHome">\_\_AXE\_\_.setHome</span>
 #### 定义和用法
