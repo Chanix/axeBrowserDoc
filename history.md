@@ -2,8 +2,11 @@
 
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
-- 版本升级至 1.0.4；
 - 脚本文件的简单保护；
+- 优化代码逻辑，减小程序体积；
+
+## 2020/07/22
+- 版本升级至 1.0.4；
 - 取消 CTRL+、CTRL-、CTRL0 对界面缩放的热键；
         缩放有可能造成与开发者的意图相冲突；
         界面应当由开发者来决定，不应画蛇添足；
@@ -12,6 +15,7 @@
 - 完善并整理文档；
 - 新增与调整扩展（此版本变化较大，请以最新文档为准）：
     - 基础扩展          [\_\_AXE\_\_](AXE_core.md#axe)；
+    - 控制台            [\_\_AXE\_\_.console](AXE_console.md#axe_console)
     - 自定义热键        [\_\_AXE\_\_.hotkey](AXE_hotkey.md#axe_hotkey)；
     - 剪贴板            [\_\_AXE\_\_.clipboard](AXE_clipboard.md#axe_clipboard)
     - 编码解码          [\_\_AXE\_\_.crypt](AXE_process.md#axe_crypt)
@@ -19,8 +23,11 @@
     - 环境变量          [\_\_AXE\_\_.env](AXE_clipboard.md#axe_env)
     - 进程相关          [\_\_AXE\_\_.process](AXE_process.md#axe_process)
     - 文件系统          [\_\_AXE\_\_.fsys](AXE_fsys.md#axe_fsys)
-- 优化代码逻辑，减小程序体积（3.2M）；
 - 移除 window.external.axe；
+
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200722.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200722.zip) 
 
 
 ## 2020/07/01
