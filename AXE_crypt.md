@@ -508,3 +508,6 @@ __AXE__.crypt.zlib.gzUncompress('contentGzip');
 ```
 
 ---
+
+quotedPrintable.encode
+quotedPrintable.decode

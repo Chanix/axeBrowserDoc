@@ -2,8 +2,13 @@
 
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
-- 脚本文件的简单保护；
 - 优化代码逻辑，减小程序体积；
+- 新增与调整扩展：
+    - 控制台            [\_\_AXE\_\_.console](AXE_console.md#axe_console)
+    - 字符串处理        [\_\_AXE\_\_.string](AXE_string.md#axe_string)
+- 脚本文件的简单保护，保护开发者；
+    axeBrowser -toolkit protect_script -f <filename>
+- 新增命令行小工具，通过命令行参数 toolkit 进行调用；
 
 ## 2020/07/22
 - 版本升级至 1.0.4；
