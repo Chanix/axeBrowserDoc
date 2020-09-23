@@ -2,13 +2,22 @@
 
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
+
+
+## 2020/09/23
 - 优化代码逻辑，减小程序体积；
+- 修正处理 timeout 参数时的一处缺陷，该缺陷导致特定形况下程序无法退出；
 - 新增与调整扩展：
     - 控制台            [\_\_AXE\_\_.console](AXE_console.md#axe_console)
     - 字符串处理        [\_\_AXE\_\_.string](AXE_string.md#axe_string)
 - 脚本文件的简单保护，保护开发者；
     axeBrowser -toolkit protect_script -f <filename>
 - 新增命令行小工具，通过命令行参数 toolkit 进行调用；
+
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200923.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200923.zip)
+
 
 ## 2020/07/22
 - 版本升级至 1.0.4；
