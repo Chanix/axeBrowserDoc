@@ -3,6 +3,16 @@
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
 
+## 2020/10/22
+- 修正装载提示窗体失败的错误；
+- 改进伪随机数算法和种子设置，尽量的“真”随机一些；
+- 继续修正 \_\_AXE\_\_.exit() 偶尔卡死，无法正常关闭应用的问题（嗯……继续……）；
+- 提示捐助窗口，增加定时关闭功能，减少对流程的干扰；
+- 重构代码，拆分功能类与模块，优化代码，不再那么面条了；
+- 整理现有文档，部分扩展模块的调整和完善；
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20201022.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20201022.zip)
 
 ## 2020/09/23
 - 优化代码逻辑，减小程序体积；

@@ -1,5 +1,5 @@
 ## <span id = "axe_process">\_\_AXE\_\_.process</span>
-进程相关的功能，本扩展包状态为“稳定”。
+进程相关的功能。
 
 ---
 

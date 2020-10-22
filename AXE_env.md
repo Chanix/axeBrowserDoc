@@ -1,6 +1,7 @@
 # <span id = "axe_env">\_\_AXE\_\_.env</span>
-环境变量相关
+环境变量相关的功能。
 
+---
 
 ## <span id = "axe_env_get">\_\_AXE\_\_.env.get</span>
 #### 定义和用法

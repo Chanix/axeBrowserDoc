@@ -1,20 +1,6 @@
 ## <span id = "axe_dlg">\_\_AXE\_\_.dlg</span>
 各种常用的对话框，消息框等交互小窗口。
 
-## <span id = "axe_dlg_parameter_note">参数说明</span>
-  * 本模块经常使用到一些参数，需要按照约定来传参：
-  * 本模块很多参数可以忽略，如果是最后一个参数，可以直接忽略，反之则需要用 null 来占位；
-  * 若忽略了某些参数，则自动使用默认值；
-
-### fileType 
-指定文件类型（后缀名），用“文件说明|通配符”的方式来说明，支持多个，中间用“|”分隔。
-例如：“所有文件|\*.\*”、“所有文件|\*.\*|文本文件|\*.txt”；
-
-### title
-对话框窗口的标题，可以忽略；
-
-### filename
-文件名称
 
 
 ---
@@ -32,12 +18,14 @@ __AXE__.dlg.openFile(fileType, title, filename)
 | 参数  | 描述 |
 | :---  | :--- |
 | fileType | 文件类型 |
-| title | 对话框窗口标题 |
+| title | 窗口标题 |
 | filename | 默认选择的文件名 |
 
+fileType 指定文件类型（后缀名），用“文件说明|通配符”的方式来说明，支持多个，中间用“|”分隔。
+例如：“所有文件|\*.\*”、“所有文件|\*.\*|文本文件|\*.txt”；
+
 #### 返回值
-取消 null
-否则返回选取的文件名称。
+未选择（例如点击取消按钮或者按 ESC 键）返回 null，否则返回选取的文件名称。
 
 #### 实例
 ```javascript
@@ -50,8 +38,8 @@ __AXE__.dlg.openFile(null, null, 'after.js');
 
 ## <span id = "axe_dlg_openFileEx">\_\_AXE\_\_.dlg.openFileEx</span>
 #### 定义和用法
-打开文件选择对话框，进行文件选择，并返回选取的文件名，支持多选。
-如果没有选择（退出）则返回 null。
+打开文件选择对话框，进行文件选择，并返回选取的文件名数组，支持多选。
+未选择（例如点击取消按钮或者按 ESC 键）返回 null。
 
 ```javascript
 __AXE__.dlg.openFileEx(fileType, title, dir)
@@ -60,12 +48,15 @@ __AXE__.dlg.openFileEx(fileType, title, dir)
 | 参数  | 描述 |
 | :---  | :--- |
 | fileType | 文件类型 |
-| title | 对话框窗口标题 |
+| title | 窗口标题 |
 | dir | 默认文件夹 |
 
+fileType 指定文件类型（后缀名），用“文件说明|通配符”的方式来说明，支持多个，中间用“|”分隔。
+例如：“所有文件|\*.\*”、“所有文件|\*.\*|文本文件|\*.txt”；
+
 #### 返回值
-取消 null
-否则返回数组，元素为选取的文件名称。
+未选择（例如点击取消按钮或者按 ESC 键）返回 null。
+否则返回数组，其中的元素为选取的文件名称。
 
 #### 实例
 ```javascript
@@ -88,12 +79,14 @@ __AXE__.dlg.saveFile(fileType, title, filename)
 | 参数  | 描述 |
 | :---  | :--- |
 | fileType | 文件类型 |
-| title | 对话框窗口标题 |
+| title | 窗口标题 |
 | filename | 默认文件名 |
 
+fileType 指定文件类型（后缀名），用“文件说明|通配符”的方式来说明，支持多个，中间用“|”分隔。
+例如：“所有文件|\*.\*”、“所有文件|\*.\*|文本文件|\*.txt”；
+
 #### 返回值
-取消 null
-否则返回选取的文件名称。
+未选择（例如点击取消按钮或者按 ESC 键）返回 null。否则返回选取的文件名称。
 
 #### 实例
 ```javascript
@@ -157,4 +150,81 @@ __AXE__.dlg.openDirEx(dir, title, label, multi)
 #### 实例
 ```javascript
 __AXE__.dlg.openDirEx();
+```
+
+
+---
+
+
+## <span id = "axe_dlg_msgboxInfo">\_\_AXE\_\_.dlg.msgboxInfo</span>
+#### 定义和用法
+显示信息提示对话框，如果设定了超时时间，则超时自动关闭。
+
+```javascript
+__AXE__.dlg.msgboxInfo(text, title, timeout)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| text | 提示信息内容 |
+| title | 窗口标题 |
+| timeout | 超时时间（毫秒） |
+
+#### 返回值
+1
+
+#### 实例
+```javascript
+__AXE__.dlg.msgboxInfo(`显示的信息提示内容`, `信息提示窗口的标题`);
+__AXE__.dlg.msgboxInfo(`这个提示窗口 5 秒后自动关闭`, `信息提示窗口的标题`, 5000);
+```
+
+
+---
+
+
+## <span id = "axe_dlg_msgboxErr">\_\_AXE\_\_.dlg.msgboxErr</span>
+#### 定义和用法
+显示错误提示对话框
+
+```javascript
+__AXE__.dlg.msgboxErr(text, title)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| text | 提示信息内容 |
+| title | 窗口标题 |
+
+#### 返回值
+1
+
+#### 实例
+```javascript
+__AXE__.dlg.msgboxErr(`显示的信息提示内容`, `信息提示窗口的标题`);
+```
+
+
+---
+
+
+## <span id = "axe_dlg_msgboxOkCancel">\_\_AXE\_\_.dlg.msgboxOkCancel</span>
+#### 定义和用法
+显示选择对话框，用户可以选择“确认”或“取消”
+
+```javascript
+__AXE__.dlg.msgboxOkCancel(text, title)
+```
+
+| 参数  | 描述 |
+| :---  | :--- |
+| text | 提示信息内容 |
+| title | 窗口标题 |
+
+#### 返回值
+用户选择确认返回 true，其他情况返回 false
+
+#### 实例
+```javascript
+__AXE__.dlg.msgboxOkCancel(`显示的信息提示内容`, `信息提示窗口的标题`);
 ```
