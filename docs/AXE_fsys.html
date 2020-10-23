@@ -69,7 +69,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AXE_hotkey.html" />
+    <link rel="next" href="AXE_fsys.html" />
     
     
     <link rel="prev" href="AXE_env.html" />
@@ -1220,6 +1220,181 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_canRead">
+            
+                    
+                    __AXE__.fsys.canRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_canWrite">
+            
+                    
+                    __AXE__.fsys.canWrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.3" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_canReadWrite">
+            
+                    
+                    __AXE__.fsys.canReadWrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.4" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_exists">
+            
+                    
+                    __AXE__.fsys.exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_isDir">
+            
+                    
+                    __AXE__.fsys.isDir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.6" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_isFile">
+            
+                    
+                    __AXE__.fsys.isFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.7" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_isHidden">
+            
+                    
+                    __AXE__.fsys.isHidden
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.8" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_isReadonly">
+            
+                    
+                    __AXE__.fsys.isReadonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.9" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_isSystemFile">
+            
+                    
+                    __AXE__.fsys.isSystemFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.10" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_fullpath">
+            
+                    
+                    __AXE__.fsys.fullpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.11" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_flistFiles">
+            
+                    
+                    __AXE__.fsys.listFiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.12" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_readFileToString">
+            
+                    
+                    __AXE__.fsys.readFileToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.13" data-path="AXE_fsys.html">
+            
+                <a href="AXE_fsys.html#axe_fsys_writeStringToFile">
+            
+                    
+                    __AXE__.fsys.writeStringToFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.5.8" data-path="AXE_hotkey.html">
@@ -1478,25 +1653,354 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="axefsys">__AXE__.fsys</h1>
-<p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x7684;&#x6269;&#x5C55;&#x529F;&#x80FD;</p>
+                                <h1 id="axefsys"><span id="axe_fsys">__AXE__.fsys</span></h1>
+<p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;</p>
 <hr>
-<pre><code>canRead = function(filename) {
-canWrite = function(filename) {
-canReadWrite = function(filename) {
-exists = function(filename) {
-   isDir = function(filename) {
-isFile = function(filename) {
-isHidden = function(filename) {
-isReadonly = function(filename) {
-isSystemFile = function(filename) {
-fullpath = function(filename) {
-listFiles= function(dir, wildcard, recursive) {
-readFileToString = function(filename) {
-readFile = readFileToString;
-writeStringToFile = function(filename, content, ifAppend = false) {
-writeFile = writeStringToFile;
+<h2 id="axefsyscanread"><span id="axe_fsys_canRead">__AXE__.fsys.canRead</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x53EF;&#x8BFB;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.canRead(filename);
 </code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x53EF;&#x8BFB;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.canRead(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsyscanwrite"><span id="axe_fsys_canWrite">__AXE__.fsys.canWrite</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x53EF;&#x5199;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.canWrite(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x53EF;&#x5199;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.canWrite(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsyscanreadwrite"><span id="axe_fsys_canReadWrite">__AXE__.fsys.canReadWrite</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x53EF;&#x8BFB;&#x5199;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.canReadWrite(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x53EF;&#x8BFB;&#x5199;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.canReadWrite(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysexists"><span id="axe_fsys_exists">__AXE__.fsys.exists</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x662F;&#x5426;&#x5B58;&#x5728;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.exists(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5B58;&#x5728;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.exists(<span class="hljs-string">&apos;C:\\Windows\\&apos;</span>);
+__AXE__.fsys.exists(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+__AXE__.fsys.exists(<span class="hljs-string">&apos;C:\\Windows.old\\&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysisdir"><span id="axe_fsys_isDir">__AXE__.fsys.isDir</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x6587;&#x4EF6;&#x5939;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.isDir(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x662F;&#x6587;&#x4EF6;&#x5939;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.isDir(<span class="hljs-string">&apos;C:\\Windows\\&apos;</span>);
+__AXE__.fsys.isDir(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysisfile"><span id="axe_fsys_isFile">__AXE__.fsys.isFile</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x6587;&#x4EF6;&#x5939;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.isFile(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x662F;&#x6587;&#x4EF6;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.isFile(<span class="hljs-string">&apos;C:\\Windows\\&apos;</span>);
+__AXE__.fsys.isFile(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysishidden"><span id="axe_fsys_isHidden">__AXE__.fsys.isHidden</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x9690;&#x85CF;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.isHidden(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6587;&#x4EF6;&#x4E3A;&#x9690;&#x85CF;&#x6A21;&#x5F0F;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.isHidden(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysisreadonly"><span id="axe_fsys_isReadonly">__AXE__.fsys.isReadonly</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x53EA;&#x8BFB;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.isReadonly(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6587;&#x4EF6;&#x4E3A;&#x53EA;&#x8BFB;&#x6A21;&#x5F0F;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.isReadonly(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysissystemfile"><span id="axe_fsys_isSystemFile">__AXE__.fsys.isSystemFile</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x4E3A;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.isSystemFile(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6587;&#x4EF6;&#x4E3A;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x8FD4;&#x56DE; true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.isSystemFile(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysfullpath"><span id="axe_fsys_fullpath">__AXE__.fsys.fullpath</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x5168;&#x8DEF;&#x5F84;&#x540D;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.fullpath(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x5168;&#x8DEF;&#x5F84;&#x540D;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.fullpath(<span class="hljs-string">&apos;C:\\Windows\\regedit.exe&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsyslistfiles"><span id="axe_fsys_flistFiles">__AXE__.fsys.listFiles</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x540D;&#x79F0;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.listFiles(dir, wildcard, recursive);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dir</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x5939;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">wildcard</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;&#x901A;&#x914D;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">recursive</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x5305;&#x542B;&#x5B50;&#x6587;&#x4EF6;&#x5939;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x540D;&#x79F0;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.listFiles(<span class="hljs-string">&apos;C:\\Windows\\debug\\&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsysreadfiletostring"><span id="axe_fsys_readFileToString">__AXE__.fsys.readFileToString</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x8BFB;&#x53D6;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5176;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.readFileToString(filename);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.readFileToString(<span class="hljs-string">&apos;C:\\Windows\\System32\\drivers\\etc\\hosts&apos;</span>);
+</code></pre>
+<hr>
+<h2 id="axefsyswritestringtofile"><span id="axe_fsys_writeStringToFile">__AXE__.fsys.writeStringToFile</span></h2>
+<h4 id="&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;">&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;</h4>
+<p>&#x5C06;&#x5185;&#x5BB9;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-javascript">__AXE__.fsys.writeStringToFile(filename, content, ifAppend);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x5199;&#x5165;&#x7684;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td style="text-align:left">ifAppend</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x8FFD;&#x52A0;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5426;&#xFF0C;&#x5373;&#x8986;&#x76D6;&#x6A21;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x6210;&#x529F;&#x8FD4;&#x56DE;  true&#xFF0C;&#x5176;&#x4ED6;&#x8FD4;&#x56DE; false</p>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code class="lang-javascript">__AXE__.fsys.writeStringToFile(<span class="hljs-string">&apos;D:\\test.txt&apos;</span>, <span class="hljs-string">&apos;this is a test&apos;</span>, <span class="hljs-literal">false</span>);
+</code></pre>
+
                                 
                                 </section>
                             
@@ -1528,7 +2032,7 @@ writeFile = writeStringToFile;
                 </a>
                 
                 
-                <a href="AXE_hotkey.html#axe_hotkey" class="navigation navigation-next " aria-label="Next page: __AXE__.hotkey   （应用热键）">
+                <a href="AXE_fsys.html#axe_fsys_canRead" class="navigation navigation-next " aria-label="Next page: __AXE__.fsys.canRead">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1539,7 +2043,7 @@ writeFile = writeStringToFile;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"__AXE__.fsys     （文件系统）","level":"1.5.7","depth":2,"next":{"title":"__AXE__.hotkey   （应用热键）","level":"1.5.8","depth":2,"anchor":"#axe_hotkey","path":"AXE_hotkey.md","ref":"AXE_hotkey.md#axe_hotkey","articles":[{"title":"__AXE__.hotkey.set","level":"1.5.8.1","depth":3,"anchor":"#axe_hotkey_set","path":"AXE_hotkey.md","ref":"AXE_hotkey.md#axe_hotkey_set","articles":[]},{"title":"__AXE__.hotkey.unset","level":"1.5.8.2","depth":3,"anchor":"#axe_hotkey_unset","path":"AXE_hotkey.md","ref":"AXE_hotkey.md#axe_hotkey_unset","articles":[]},{"title":"__AXE__.hotkey.clear","level":"1.5.8.3","depth":3,"anchor":"#axe_hotkey_clear","path":"AXE_hotkey.md","ref":"AXE_hotkey.md#axe_hotkey_clear","articles":[]}]},"previous":{"title":"__AXE__.env.add","level":"1.5.6.3","depth":3,"anchor":"#axe_env_add","path":"AXE_env.md","ref":"AXE_env.md#axe_env_add","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","expandable-chapters","splitter","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"expandable-chapters":{},"splitter":{},"back-to-top-button":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"http://axeBrowser.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"axeBrowser 使用手册","language":"zh-hans","gitbook":"*"},"file":{"path":"AXE_fsys.md","mtime":"2020-07-19T06:17:29.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-22T03:20:39.848Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"__AXE__.fsys     （文件系统）","level":"1.5.7","depth":2,"next":{"title":"__AXE__.fsys.canRead","level":"1.5.7.1","depth":3,"anchor":"#axe_fsys_canRead","path":"AXE_fsys.md","ref":"AXE_fsys.md#axe_fsys_canRead","articles":[]},"previous":{"title":"__AXE__.env.add","level":"1.5.6.3","depth":3,"anchor":"#axe_env_add","path":"AXE_env.md","ref":"AXE_env.md#axe_env_add","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","expandable-chapters","splitter","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"expandable-chapters":{},"splitter":{},"back-to-top-button":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"http://axeBrowser.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"axeBrowser 使用手册","language":"zh-hans","gitbook":"*"},"file":{"path":"AXE_fsys.md","mtime":"2020-10-23T03:09:56.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-23T03:15:43.274Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

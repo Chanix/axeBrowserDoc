@@ -20,7 +20,7 @@ __AXE__.env.get(envname);
 
 #### 实例
 ```javascript
-__AXE__.log('环境变量 PATH：', __AXE__.env.get('path'));
+__AXE__.console.log('环境变量 PATH：', __AXE__.env.get('path'));
 ```
 
 ## <span id = "axe_env_set">\_\_AXE\_\_.env.set</span>
