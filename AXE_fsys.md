@@ -317,3 +317,29 @@ __AXE__.fsys.writeStringToFile(filename, content, ifAppend);
 ```javascript
 __AXE__.fsys.writeStringToFile('D:\\test.txt', 'this is a test', false);
 ```
+
+
+---
+
+
+## <span id = "axe_fsys_getUserDesktopDir">\_\_AXE\_\_.fsys.getUserDesktopDir</span>
+#### 定义和用法
+获取当前用户的桌面文件夹路径名。
+
+```javascript
+__AXE__.fsys.getUserDesktopDir();
+```
+
+#### 返回值
+前用户的桌面文件夹路径名
+
+#### 实例
+```javascript
+__AXE__.fsys.getUserDesktopDir();
+```
+
+
+---
+
+
+

@@ -2,8 +2,16 @@
 
 ## 正在进行中的工作：
 - 升级 miniblink 和相关控件；
+
+## 2021/01/18
 - 新增与调整扩展：
     - 文件系统            [\_\_AXE\_\_.fsys](AXE_fsys.md#axe_fsys)
+    - 鼠标                [\_\_AXE\_\_.mouse](AXE_mouse.md#axe_mouse)
+- 修正命令行参数 proxy 处理错误，该错误导致无法正常设置代理服务器；
+- 调整 \_\_AXE\_\_.exit()，更优雅的终结运行，避免咚咚咚，听着好烦~~；
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20210118.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20210118.zip)
 
 ## 2020/10/22
 - 修正装载提示窗体失败的错误；
@@ -18,17 +26,13 @@
 
 ## 2020/09/23
 - 优化代码逻辑，减小程序体积；
-- 修正处理 timeout 参数时的一处缺陷，该缺陷导致特定形况下程序无法退出；
+- 修正处理 timeout 参数时的一处缺陷，该缺陷导致特定情况下程序无法退出；
 - 新增与调整扩展：
     - 控制台            [\_\_AXE\_\_.console](AXE_console.md#axe_console)
     - 字符串处理        [\_\_AXE\_\_.string](AXE_string.md#axe_string)
 - 脚本文件的简单保护，保护开发者；
     axeBrowser -toolkit protect_script -f <filename>
 - 新增命令行小工具，通过命令行参数 toolkit 进行调用；
-
-
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200923.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200923.zip)
 
 
 ## 2020/07/22
@@ -52,19 +56,11 @@
 - 移除 window.external.axe；
 
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200722.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200722.zip) 
-
-
 ## 2020/07/01
 - 优化 app 运行模式下的窗体显示；
 - 整理和完善运行流程、运行模式；
 - 新增常用编码、加密算法，参见 [\_\_AXE\_\_.crypt](AXE_crypt.md#axe_crypt)；
 - 新增进程相关的扩展函数，参见 [\_\_AXE\_\_.process](AXE_process.md#axe_process)；
-
-
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20200701.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20200701.zip) 
 
 
 ## 2020/06/26
