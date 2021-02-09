@@ -1,7 +1,20 @@
 # 下载与历史
 
 ## 正在进行中的工作：
-- 升级 miniblink 和相关控件；
+- 进一步完善 demo；
+- 进一步加强 js API；
+- 进一步完善文档；
+
+## 2021/02/09
+- 版本升级至 1.0.5；
+- 升级 miniblink 至 2021-1-14；
+- 发布版中增加 demo 文件夹，未来相关的范例都会放在这里；
+- 新增范例：获取 Bing 每日壁纸；
+- 祝各位春节愉快！
+
+[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20210209.zip) | 
+[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20210209.zip)
+
 
 ## 2021/01/18
 - 新增与调整扩展：
@@ -10,9 +23,6 @@
 - 修正命令行参数 proxy 处理错误，该错误导致无法正常设置代理服务器；
 - 调整 \_\_AXE\_\_.exit()，更优雅的终结运行，避免咚咚咚，听着好烦~~；
 
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20210118.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20210118.zip)
-
 ## 2020/10/22
 - 修正装载提示窗体失败的错误；
 - 改进伪随机数算法和种子设置，尽量的“真”随机一些；
@@ -20,9 +30,6 @@
 - 提示捐助窗口，增加定时关闭功能，减少对流程的干扰；
 - 重构代码，拆分功能类与模块，优化代码，不再那么面条了；
 - 整理现有文档，部分扩展模块的调整和完善；
-
-[GitHub 下载](https://raw.githubusercontent.com/Chanix/axeBrowserDoc/master/download/axeBrowser-20201022.zip) | 
-[gitee 下载](https://gitee.com/chanix/axeBrowserDoc/raw/master/download/axeBrowser-20201022.zip)
 
 ## 2020/09/23
 - 优化代码逻辑，减小程序体积；

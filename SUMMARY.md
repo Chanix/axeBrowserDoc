@@ -111,6 +111,5 @@
     * [\_\_AXE\_\_.process.exec](AXE_process.md#axe_process_exec)
     * [\_\_AXE\_\_.process.execWait](AXE_process.md#axe_process_execWait)
 * [应用范例](example.md)
-  * [获取bing每日壁纸并保存](examples/get_bing_bg.md)
 * [常见问题与解答](faq.md)
 

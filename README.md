@@ -1,29 +1,31 @@
 # axeBrowser 简介与说明
 
-axeBrowser is a <font color=red>browser</font>, <font color=red>**a**</font>utomatically, e<font color=red>**x**</font>tendedly, <font color=red>**e**</font>asily.
+axeBrowser is a <font color=red>browser</font>, <font color=red>**A**</font>utomatically, e<font color=red>**X**</font>tendedly, <font color=red>**E**</font>asily.
 
 axeBrowser 是一个浏览器，可以**方便**的进行功能**扩展**和**自动化**操作。
 
 使用 JavaScript，HTML 和 CSS 快速搭建 Window 桌面应用程序，省下更多的时间用来陪伴、娱乐和成长。
 
+JavaScript/HTML/CSS + AXEBrowser = Windows application ! 
+
 
 [免费下载](history.md)
 
-## 功能和特点
-- 内置浏览器，提供 JavaScript 运行环境；
-- 提供内置扩展对象供 JavaScript 调用，扩展功能；
-- 多种运行模式（命令行模式、应用模式，调试模式）；
-- Javascript 可操作所有 DOM、window 等浏览器中才有的对象。
-
 ## 用途和作用
-axeBrowser 本质上是一个通过浏览器环境提供 javascript 运行环境的脚本执行工具，从某种意义上而言和 Electron 很类似。开发者可以使用 JavaScript，HTML 和 CSS 快速搭建 Window 桌面应用程序，省下更多的时间用来陪伴、娱乐和成长。
+axeBrowser 本质上是一个通过浏览器控件提供 javascript 运行环境的脚本执行工具，从某种意义上而言和 Electron 很类似。开发者可以使用 JavaScript，HTML 和 CSS 快速搭建 Window 桌面应用程序，省下更多的时间用来陪伴、娱乐和成长。
 
-- 对作者而言，开发 axeBrowser 是为了满足自动化测试的需求；
+- 对作者而言，开发 axeBrowser 是为了满足自动化测试和日常小工具的需求；
 - 一些用户用来自动化操作，提高工作效率；
-- 一些用户用来运行和分发一些 javascript 应用；
+- 一些用户用来运行和分发一些 Windows 应用；
 - ……
 
 具体能做什么，取决于您的想象力，您可以在范例中看到一些例子。
+
+## 功能和特点
+- 内置 JavaScript 运行环境；
+- 提供内置扩展对象供 JavaScript 调用，扩展功能；
+- 多种运行模式（命令行模式、应用模式，调试模式）；
+- Javascript 可操作所有 DOM、window 等浏览器中才有的对象。
 
 ## 已知功能限制
 axeBrowser 的功能限制主要源于两个方面，开发工具（32位程序）和内置的浏览器（miniblink）。
